@@ -2,97 +2,138 @@ import React, { useState, useEffect } from 'react';
 
 const CLUSTERS = [
   { id: 'automatic-checking', name: 'Automatic Phone Checking', code: 'C-01' },
-  { id: 'immediate-availability', name: 'Immediate Availability', code: 'C-02' },
-  { id: 'existing-hobbies', name: 'Existing Hobbies & Alternative Activities', code: 'C-03' },
-  { id: 'reasons-for-use', name: 'Reasons for Phone Use', code: 'C-04' },
-  { id: 'intended-vs-actual', name: 'Intended vs. Actual Use', code: 'C-05' },
-  { id: 'emotional-responses', name: 'Emotional Responses', code: 'C-06' },
-  { id: 'exceptions-contradictions', name: 'Exceptions & Contradictions', code: 'C-07' },
+  { id: 'convenience-accessibility', name: 'Convenience & Accessibility', code: 'C-02' },
+  { id: 'boredom-unoccupied-time', name: 'Boredom & Unoccupied Time', code: 'C-03' },
+  { id: 'other-interests', name: 'Other Interests', code: 'C-04' },
+  { id: 'intention-vs-actual', name: 'Intention vs. Actual Use', code: 'C-05' },
+  { id: 'social-connection-utility', name: 'Social Connection & Utility', code: 'C-06' },
+  { id: 'context-individual-differences', name: 'Context & Individual Differences', code: 'C-07' },
 ];
 
 const NOTE_TYPES = [
-  { id: 'observation', label: 'OBSERVED EVIDENCE (SIMULATED)', bg: 'bg-[#171717] text-[#F5F4F0]' },
-  { id: 'explanation', label: 'PARTICIPANT EXPLANATION (SIMULATED)', bg: 'bg-[#EAE9E4] text-[#171717]' },
-  { id: 'interpretation', label: 'RESEARCHER INTERPRETATION', bg: 'bg-[#DFDDD6] text-[#262626]' },
-  { id: 'literature', label: 'LITERATURE FINDING', bg: 'bg-[#E4E4DC] text-[#404040]' },
-  { id: 'hypothesis', label: 'HYPOTHESIS TO VALIDATE', bg: 'bg-[#F2EFE8] border border-[#171717] text-[#171717]' },
+  { id: 'research-question', label: 'RESEARCH QUESTION', bg: 'bg-[#171717] text-[#F5F4F0]' },
+  { id: 'open-question', label: 'OPEN QUESTION', bg: 'bg-[#EAE9E4] text-[#171717] border border-[#DDDCD6]' },
+  { id: 'working-hypothesis', label: 'WORKING HYPOTHESIS (UNVALIDATED)', bg: 'bg-[#F2EFE8] border border-[#171717] text-[#171717]' },
+  { id: 'possibility', label: 'POSSIBILITY TO INVESTIGATE', bg: 'bg-[#DFDDD6] text-[#262626]' },
+  { id: 'design-consideration', label: 'DESIGN CONSIDERATION', bg: 'bg-[#E4E4DC] text-[#404040]' },
 ];
 
 const INITIAL_NOTES = [
+  // C-01 — AUTOMATIC PHONE CHECKING
   {
     id: 'n1',
     clusterId: 'automatic-checking',
-    type: 'observation',
-    tag: '[Simulated Observation]',
-    text: '[Simulated observation: Observed participant reach pocket during a 15-second conversational pause without any audio or haptic alert triggering.]'
+    type: 'research-question',
+    tag: '[Research Question]',
+    text: 'What prompts someone to reach for their phone when nothing specific requires their attention?'
   },
   {
     id: 'n2',
     clusterId: 'automatic-checking',
-    type: 'explanation',
-    tag: '[Simulated: College Colleague]',
-    text: '"[Simulated quote: I unlock my phone before I even realize I am doing it; it is just resting in my palm.]"'
+    type: 'open-question',
+    tag: '[Open Question]',
+    text: 'Is the action intentional, habitual, prompted by a notification, or influenced by the surrounding environment?'
   },
+
+  // C-02 — CONVENIENCE & ACCESSIBILITY
   {
     id: 'n3',
-    clusterId: 'immediate-availability',
-    type: 'interpretation',
-    tag: '[Researcher Interpretation]',
-    text: 'The smartphone represents zero physical startup friction. The physical distance between the user and the screen is consistently under 30 centimeters.'
+    clusterId: 'convenience-accessibility',
+    type: 'working-hypothesis',
+    tag: '[Working Hypothesis — Unvalidated]',
+    text: 'An activity that is immediately available may be easier to start than one that requires preparation.'
   },
   {
     id: 'n4',
-    clusterId: 'existing-hobbies',
-    type: 'explanation',
-    tag: '[Simulated: My Mother]',
-    text: '"[Simulated quote: I love knitting and gardening, but getting the yarn basket out for just ten minutes feels like too much work.]"'
+    clusterId: 'convenience-accessibility',
+    type: 'open-question',
+    tag: '[Open Question]',
+    text: 'Would making an alternative activity easier to access influence what someone chooses?'
   },
+
+  // C-03 — BOREDOM & UNOCCUPIED TIME
   {
     id: 'n5',
-    clusterId: 'existing-hobbies',
-    type: 'hypothesis',
-    tag: '[Provisional Hypothesis]',
-    text: 'People may have activities they genuinely enjoy but choose not to begin during short breaks because another option is easier to access.'
+    clusterId: 'boredom-unoccupied-time',
+    type: 'research-question',
+    tag: '[Research Question]',
+    text: 'How do people respond to waiting, quiet moments, and having nothing planned?'
   },
   {
     id: 'n6',
-    clusterId: 'reasons-for-use',
-    type: 'observation',
-    tag: '[Simulated: Young Children]',
-    text: '[Simulated observation: Child requesting smartphone when waiting at red traffic signals, seeking interactive cartoon videos.]'
+    clusterId: 'boredom-unoccupied-time',
+    type: 'open-question',
+    tag: '[Open Question]',
+    text: 'Do people experience these moments as boredom, rest, freedom, or an opportunity to do something else?'
   },
+
+  // C-04 — OTHER INTERESTS
   {
     id: 'n7',
-    clusterId: 'intended-vs-actual',
-    type: 'explanation',
-    tag: '[Simulated: College Colleague]',
-    text: '"[Simulated quote: I opened the phone to check what time my lecture was, and thirty minutes later I was watching cooking clips.]"'
+    clusterId: 'other-interests',
+    type: 'research-question',
+    tag: '[Research Question]',
+    text: 'What makes people start or postpone hobbies and offline activities?'
   },
   {
     id: 'n8',
-    clusterId: 'emotional-responses',
-    type: 'interpretation',
-    tag: '[Researcher Interpretation]',
-    text: 'Post-scrolling affective state is characterized by mild dysphoria and cognitive fog rather than rejuvenation or satisfaction.'
+    clusterId: 'other-interests',
+    type: 'open-question',
+    tag: '[Open Question]',
+    text: 'Do time, energy, preparation, mood, or lack of ideas influence whether an activity gets started?'
   },
+
+  // C-05 — INTENTION VS. ACTUAL USE
   {
     id: 'n9',
-    clusterId: 'exceptions-contradictions',
-    type: 'explanation',
-    tag: '[Simulated: Neighbour\'s Grandfather]',
-    text: '"[Simulated quote: I check news on the tablet every morning with tea, but when I sit outside on the porch, I just watch the trees.]"'
+    clusterId: 'intention-vs-actual',
+    type: 'possibility',
+    tag: '[Possibility to Investigate]',
+    text: 'Does phone use sometimes continue beyond what a person initially intended?'
   },
   {
     id: 'n10',
-    clusterId: 'exceptions-contradictions',
-    type: 'literature',
-    tag: '[Literature: CHBR 2024]',
-    text: 'Doomscrolling (compulsive negative news consumption) specifically evokes existential dread, whereas habitual scrolling often produces cognitive numbness.'
+    clusterId: 'intention-vs-actual',
+    type: 'research-question',
+    tag: '[Research Question]',
+    text: 'What makes someone stop scrolling and move on to another activity?'
+  },
+
+  // C-06 — SOCIAL CONNECTION & UTILITY
+  {
+    id: 'n11',
+    clusterId: 'social-connection-utility',
+    type: 'design-consideration',
+    tag: '[Design Consideration]',
+    text: 'Phone use can support communication, practical tasks, learning, entertainment, and emotional connection. Do not assume all phone use is undesirable.'
+  },
+  {
+    id: 'n12',
+    clusterId: 'social-connection-utility',
+    type: 'research-question',
+    tag: '[Research Question]',
+    text: 'How do people distinguish useful phone use from scrolling they later wish they had avoided?'
+  },
+
+  // C-07 — CONTEXT & INDIVIDUAL DIFFERENCES
+  {
+    id: 'n13',
+    clusterId: 'context-individual-differences',
+    type: 'research-question',
+    tag: '[Research Question]',
+    text: 'How might age, mood, energy, environment, and available activities influence what someone chooses?'
+  },
+  {
+    id: 'n14',
+    clusterId: 'context-individual-differences',
+    type: 'open-question',
+    tag: '[Open Question]',
+    text: 'Which patterns are shared across people, and which depend on individual needs or circumstances?'
   }
 ];
 
 export default function AffinityMap() {
-  const STORAGE_KEY = 'boredom_project_affinity_map_en_v3';
+  const STORAGE_KEY = 'boredom_project_affinity_map_v4_research_ready';
 
   const [notes, setNotes] = useState(() => {
     try {
@@ -110,14 +151,14 @@ export default function AffinityMap() {
 
   // New Note Form State
   const [newCluster, setNewCluster] = useState('automatic-checking');
-  const [newType, setNewType] = useState('observation');
-  const [newTag, setNewTag] = useState('[Simulated Observation]');
+  const [newType, setNewType] = useState('research-question');
+  const [newTag, setNewTag] = useState('[Research Question]');
   const [newText, setNewText] = useState('');
 
   // Edit Note Form State
   const [editText, setEditText] = useState('');
   const [editTag, setEditTag] = useState('');
-  const [editType, setEditType] = useState('observation');
+  const [editType, setEditType] = useState('research-question');
   const [editCluster, setEditCluster] = useState('automatic-checking');
 
   useEffect(() => {
@@ -136,7 +177,7 @@ export default function AffinityMap() {
       id: 'n_' + Date.now(),
       clusterId: newCluster,
       type: newType,
-      tag: newTag.trim() || '[Unspecified Tag]',
+      tag: newTag.trim() || '[Provisional Question]',
       text: newText.trim()
     };
 
@@ -177,7 +218,11 @@ export default function AffinityMap() {
   const handleResetData = () => {
     if (window.confirm('Reset affinity map notes to initial research data?')) {
       setNotes(INITIAL_NOTES);
-      localStorage.removeItem(STORAGE_KEY);
+      try {
+        localStorage.removeItem(STORAGE_KEY);
+      } catch (e) {
+        console.warn('Could not clear local storage', e);
+      }
     }
   };
 
@@ -192,7 +237,7 @@ export default function AffinityMap() {
         <div className="flex items-center gap-2">
           <span className="font-bold text-[#171717]">AFFINITY SYNTHESIS</span>
           <span>•</span>
-          <span className="text-[#737373]">{notes.length} QUALITATIVE NOTES</span>
+          <span className="text-[#737373]">{notes.length} RESEARCH NOTES</span>
         </div>
 
         <div className="flex items-center gap-2">
@@ -249,7 +294,7 @@ export default function AffinityMap() {
           className="p-4 bg-[#FFFFFF] border-2 border-[#171717] rounded-xs space-y-3 shadow-md text-xs font-mono"
         >
           <div className="font-bold text-sm text-[#171717] uppercase tracking-wide">
-            Add New Qualitative Research Note
+            Add New Research Question or Hypothesis
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
@@ -269,16 +314,16 @@ export default function AffinityMap() {
             </div>
 
             <div>
-              <label className="block text-[10px] text-[#737373] uppercase mb-1">Evidence Type</label>
+              <label className="block text-[10px] text-[#737373] uppercase mb-1">Note Type</label>
               <select
                 value={newType}
                 onChange={(e) => {
                   setNewType(e.target.value);
-                  if (e.target.value === 'observation') setNewTag('[Simulated Observation]');
-                  else if (e.target.value === 'explanation') setNewTag('[Simulated Participant Quote]');
-                  else if (e.target.value === 'interpretation') setNewTag('[Researcher Interpretation]');
-                  else if (e.target.value === 'literature') setNewTag('[Secondary Source citation]');
-                  else setNewTag('[Provisional Hypothesis]');
+                  if (e.target.value === 'research-question') setNewTag('[Research Question]');
+                  else if (e.target.value === 'open-question') setNewTag('[Open Question]');
+                  else if (e.target.value === 'working-hypothesis') setNewTag('[Working Hypothesis — Unvalidated]');
+                  else if (e.target.value === 'possibility') setNewTag('[Possibility to Investigate]');
+                  else setNewTag('[Design Consideration]');
                 }}
                 className="w-full p-1.5 bg-[#F5F4F0] border border-[#DDDCD6] rounded-xs font-mono text-xs"
               >
@@ -291,25 +336,25 @@ export default function AffinityMap() {
             </div>
 
             <div>
-              <label className="block text-[10px] text-[#737373] uppercase mb-1">Participant / Source Tag</label>
+              <label className="block text-[10px] text-[#737373] uppercase mb-1">Source / Framework Tag</label>
               <input
                 type="text"
                 value={newTag}
                 onChange={(e) => setNewTag(e.target.value)}
-                placeholder="e.g. [Simulated: College Colleague]"
+                placeholder="e.g. [Research Question]"
                 className="w-full p-1.5 bg-[#F5F4F0] border border-[#DDDCD6] rounded-xs font-mono text-xs"
               />
             </div>
           </div>
 
           <div>
-            <label className="block text-[10px] text-[#737373] uppercase mb-1">Note Content / Verbatim Quote</label>
+            <label className="block text-[10px] text-[#737373] uppercase mb-1">Note Content / Inquiry</label>
             <textarea
               rows={3}
               value={newText}
               onChange={(e) => setNewText(e.target.value)}
-              placeholder="Enter empirical observation, verified quote placeholder, or hypothesis..."
-              className="w-full p-2 bg-[#F5F4F0] border border-[#DDDCD6] rounded-xs font-sans text-xs text-[#171717]"
+              placeholder="Enter research inquiry, open question, or working hypothesis..."
+              className="w-full p-2 bg-[#F5F4F0] border border-[#DDDCD6] rounded-xs font-sans text-xs focus:bg-[#FFFFFF]"
             />
           </div>
 
@@ -317,7 +362,7 @@ export default function AffinityMap() {
             <button
               type="button"
               onClick={() => setIsAdding(false)}
-              className="px-3 py-1 bg-[#EAE9E4] text-[#525252] rounded-xs"
+              className="px-3 py-1 bg-[#EAE9E4] text-[#525252] rounded-xs hover:bg-[#DDDCD6]"
             >
               Cancel
             </button>
@@ -358,7 +403,7 @@ export default function AffinityMap() {
               {/* Notes Container */}
               {clusterNotes.length === 0 ? (
                 <div className="p-4 text-center text-xs font-mono text-[#A3A3A3] italic bg-[#FAF9F6] border border-dashed border-[#DDDCD6] rounded-xs">
-                  No notes in this cluster. Use "+ ADD NOTE" above to document evidence.
+                  No notes in this cluster. Use "+ ADD NOTE" above to document questions or hypotheses.
                 </div>
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
@@ -484,7 +529,7 @@ export default function AffinityMap() {
       </div>
 
       <div className="p-3 bg-[#EAE9E4] text-[11px] font-mono text-[#525252] rounded-xs border border-[#DDDCD6]">
-        💾 <strong>Session Persistence:</strong> Changes, newly added notes, and cluster reorganizations are saved in your browser local storage for this session. Illustrative interview citations are marked as simulated for research integrity.
+        💾 <strong>Session Persistence:</strong> Changes, newly added notes, and cluster reorganizations are saved in your browser local storage for this session. Research themes are provisional exploratory frameworks; no primary interview findings have been collected yet.
       </div>
     </div>
   );

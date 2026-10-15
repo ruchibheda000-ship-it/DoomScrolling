@@ -597,7 +597,7 @@ export const RESEARCH_POSTS = [
         slideNumber: 2,
         slideType: "interactive_affinity",
         headline: "Interactive Affinity Map",
-        description: "Explore, add, edit, move, or delete research notes across the seven provisional clusters. All changes are stored locally in your browser storage for this session.",
+        description: "Explore seven provisional research themes. Add, edit, and organise questions and hypotheses as the investigation develops. No primary interview findings have been collected yet.",
         isAffinityMap: true
       },
       {
@@ -606,24 +606,24 @@ export const RESEARCH_POSTS = [
         headline: "Research Synthesis Analysis",
         sections: [
           {
-            title: "Repeated Behaviours Across Participants",
-            text: "Unlocking without intent; checking phones during threshold intervals under 30 seconds; placing the device screen-up within arm's reach during dining and relaxation."
+            title: "Hypothesised Common Behaviours to Investigate",
+            text: "Unlocking without specific intent, checking phones during brief pauses or transitions, and keeping devices immediately accessible during daily routines."
           },
           {
-            title: "Differences Across Participants",
-            text: "Younger participants report high post-use guilt and aimless scrolling; the older participant uses the device with targeted intentionality and experiences no temporal amnesia."
+            title: "Differences Across Cohorts to Explore",
+            text: "Variations in how different age groups may perceive unoccupied moments, ranging from habitual digital checking to analog tolerance for quiet pauses."
           },
           {
-            title: "Contradictory Findings",
-            text: "Participants universally acknowledge feeling unsatisfied after extended scrolling, yet repeatedly choose it over hobbies they explicitly describe as deeply fulfilling."
+            title: "Core Contradictions to Investigate",
+            text: "The tension between desiring offline leisure (reading, crafts, hobbies) and consistently defaulting to convenient phone use during free moments."
           },
           {
-            title: "Identified Evidence Gaps",
-            text: "Need verified biometric or screen-time audit data to replace self-reported estimates. Long-term affective tracking after intentional phone-free intervals remains unmeasured."
+            title: "Identified Research Gaps",
+            text: "Primary qualitative interviews and direct observational data have not yet been conducted; current patterns represent provisional frameworks to test."
           },
           {
-            title: "Emerging Patterns",
-            text: "1. The Activation Energy Trap: Setup cost dictates choice when tired. 2. The Somatic Pacifier: Phone checking functions as an emotional buffer against ambient vulnerability."
+            title: "Provisional Themes",
+            text: "1. Convenience and Activation Energy: Setup effort may dictate leisure choices when tired. 2. Habitual Micro-Pauses: Phone checking may serve as a reflexive buffer during transitional downtime."
           }
         ]
       },
@@ -631,7 +631,7 @@ export const RESEARCH_POSTS = [
         slideNumber: 4,
         slideType: "conclusion",
         headline: "Synthesis Milestone",
-        callout: "A pattern is not established until supported by verified field notes. These clusters define the empirical foundation for our design problem framing.",
+        callout: "A pattern is not established until supported by verified field notes. These clusters define the provisional exploratory foundation for our design problem framing.",
         nextPostId: 7,
         nextPostTitle: "ABOUT THE INSIGHT"
       }
