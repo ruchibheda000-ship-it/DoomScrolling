@@ -1,10 +1,12 @@
-﻿@import "tailwindcss";
+@import "tailwindcss";
 
 @layer base {
   html {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background-color: #F5F4F0;
     color: #171717;
+    scrollbar-gutter: stable;
+    overflow-y: scroll;
   }
 }
 
@@ -22,6 +24,21 @@
   opacity: 0.04;
   pointer-events: none;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Custom Scrollbar for Inner Slide Containers */
+.slide-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+.slide-scroll::-webkit-scrollbar-track {
+  background: #EAE9E4;
+}
+.slide-scroll::-webkit-scrollbar-thumb {
+  background: #B8B7B0;
+  border-radius: 2px;
+}
+.slide-scroll::-webkit-scrollbar-thumb:hover {
+  background: #8E8D86;
 }
 
 /* Reduced Motion */

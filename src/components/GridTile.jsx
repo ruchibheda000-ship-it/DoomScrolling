@@ -3,17 +3,16 @@ import React from 'react';
 export default function GridTile({ post, onSelect }) {
   const isText = post.type === 'text';
 
-  // Instagram-style Carousel Icon (overlapping rounded squares)
+  // Instagram-style Carousel Icon (two overlapping rounded squares)
   const CarouselBadge = ({ darkTheme = false }) => (
     <div
-      className={`p-1.5 rounded-sm ${
-        darkTheme ? 'bg-black/40 backdrop-blur-sm text-white' : 'text-[#737373]'
+      className={`p-1.5 rounded-xs transition-opacity ${
+        darkTheme ? 'bg-black/50 backdrop-blur-xs text-white' : 'text-[#737373]'
       }`}
-      title="Multiple slides"
+      title="Multiple research slides"
       aria-hidden="true"
     >
       <svg className="w-4 h-4 sm:w-5 sm:h-5" viewBox="0 0 24 24" fill="none">
-        {/* Back square */}
         <rect
           x="7"
           y="3"
@@ -22,9 +21,8 @@ export default function GridTile({ post, onSelect }) {
           rx="2.5"
           stroke="currentColor"
           strokeWidth="1.8"
-          fill={darkTheme ? "rgba(0,0,0,0.2)" : "rgba(255,255,255,0.7)"}
+          fill={darkTheme ? "rgba(0,0,0,0.3)" : "rgba(255,255,255,0.8)"}
         />
-        {/* Front square */}
         <rect
           x="3"
           y="7"
@@ -33,7 +31,7 @@ export default function GridTile({ post, onSelect }) {
           rx="2.5"
           stroke="currentColor"
           strokeWidth="1.8"
-          fill={darkTheme ? "rgba(0,0,0,0.5)" : "white"}
+          fill={darkTheme ? "rgba(0,0,0,0.6)" : "white"}
         />
       </svg>
     </div>
@@ -54,11 +52,11 @@ export default function GridTile({ post, onSelect }) {
       className="group relative aspect-square w-full cursor-pointer overflow-hidden border border-[#E5E4DE] bg-[#FFFFFF] transition-all duration-300 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#171717] focus:ring-offset-2 select-none"
     >
       {isText ? (
-        /* Text-Only Editorial Tile (Mirroring Reference Screenshot) */
+        /* Text-Only Editorial Cover (1:1 with Slide 1) */
         <div className="w-full h-full p-4 sm:p-6 md:p-7 flex flex-col justify-between bg-[#FFFFFF] transition-colors duration-300 group-hover:bg-[#FAF9F6]">
           {/* Top Row: Tiny Editorial Note + Carousel Icon */}
           <div className="flex items-start justify-between gap-2">
-            <div className="max-w-[70%] sm:max-w-[65%]">
+            <div className="max-w-[72%] sm:max-w-[68%]">
               <span className="font-mono text-[9px] sm:text-[10px] text-[#A3A3A3] block uppercase tracking-wider mb-0.5">
                 {post.number} / {post.phase}
               </span>
@@ -76,15 +74,15 @@ export default function GridTile({ post, onSelect }) {
             </h2>
             <div className="mt-1 flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
               <span className="text-[9px] font-mono tracking-widest text-[#737373] uppercase">
-                {post.slides.length} SLIDES • EXPLORE →
+                {post.slides.length} SLIDES • OPEN ARCHIVE →
               </span>
             </div>
           </div>
         </div>
       ) : (
-        /* Photographic Tile (Mirroring Reference Screenshot) */
+        /* Photographic Cover (1:1 with Slide 1) */
         <div className="relative w-full h-full bg-[#171717] film-grain overflow-hidden">
-          {/* Main Monochrome Image */}
+          {/* Main Monochrome Image (object-fit: cover) */}
           <img
             src={post.image}
             alt={post.title}
@@ -92,8 +90,8 @@ export default function GridTile({ post, onSelect }) {
             className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 filter grayscale contrast-110 brightness-95"
           />
 
-          {/* Film Vignette & Shadow Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/30 pointer-events-none" />
+          {/* Film Vignette Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-black/35 pointer-events-none" />
 
           {/* Top-Right: Carousel Badge */}
           <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-10">
@@ -102,7 +100,7 @@ export default function GridTile({ post, onSelect }) {
 
           {/* Top-Left: Minimal Post Number */}
           <div className="absolute top-3 left-3 sm:top-4 sm:left-4 z-10">
-            <span className="px-1.5 py-0.5 rounded-xs bg-black/60 backdrop-blur-sm text-[9px] sm:text-[10px] font-mono text-neutral-300 uppercase tracking-widest">
+            <span className="px-1.5 py-0.5 rounded-xs bg-black/60 backdrop-blur-xs text-[9px] sm:text-[10px] font-mono text-neutral-300 uppercase tracking-widest">
               {post.number}
             </span>
           </div>

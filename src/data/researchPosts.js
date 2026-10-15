@@ -4,16 +4,16 @@ export const PROJECT_METADATA = {
   metaLine: "DESIGN RESEARCH / EMPATHISE + DEFINE / 2026",
   archiveHandle: "the.boredom.project",
   stats: [
-    { label: "POSTS", value: "9" },
+    { label: "POSTS", value: "8" },
     { label: "PHASE", value: "EMPATHISE + DEFINE" },
     { label: "COHORTS", value: "4 GROUPS" },
     { label: "STATUS", value: "VERIFIED ARCHIVE" }
   ],
   bio: {
     curator: "Design Research Archive (Empathise & Define)",
-    description: "A qualitative field investigation into idle moments, tactile reflexes, and the convenience of infinite scroll feeds. Strictly documenting human observation without speculative ideation.",
-    location: "Fieldwork & Secondary Synthesis / 2026",
-    linkText: "research-protocol-v1.4.pdf"
+    description: "An empirical investigation into unoccupied moments, habitual phone checking, convenience, and alternative activities. Focused strictly on qualitative evidence and honest synthesis.",
+    location: "Fieldwork & Secondary Literature Synthesis / 2026",
+    linkText: "research-protocol-v2.0.pdf"
   }
 };
 
@@ -23,87 +23,78 @@ export const RESEARCH_POSTS = [
     number: "01",
     slug: "about-boredom",
     type: "text",
-    title: "About Boredom.",
-    displayTitle: "About\nBoredom.",
+    title: "ABOUT BOREDOM.",
+    displayTitle: "ABOUT\nBOREDOM.",
     topNote: "Длинный текст об исследовании скуки в цифровую эпоху, иллюзии постоянной занятости и границах внимания.",
     phase: "EMPATHISE",
     category: "RESEARCH FRAMING & OBJECTIVE",
-    coverExcerpt: "What happens to human introspection when convenience systematically eliminates every micro-moment of idle time?",
+    coverExcerpt: "Introducing the central observation, core design question, and research objective without assuming causation.",
     slides: [
       {
-        slideNumber: "01",
+        slideNumber: 1,
         slideType: "cover",
-        headline: "About Boredom.",
-        subheading: "Framing the inquiry: From restorative incubation to intolerable silence.",
-        abstract: "Boredom was historically understood as an unhurried generative pause—a necessary discomfort preceding creativity and mind-wandering. In modern digital environments, the threshold for tolerating ambient stillness has disintegrated."
+        headline: "ABOUT BOREDOM.",
+        subheading: "An empirical inquiry into unoccupied moments and digital defaults.",
+        abstract: "Boredom is often assumed to directly cause screen use. This research investigates what people actually do during moments of unoccupied time, why they reach for their phones, and how convenience and alternative choices shape their actions."
       },
       {
-        slideNumber: "02",
+        slideNumber: 2,
         slideType: "context",
-        headline: "Research Context & Objective",
-        objective: "Investigate how the subjective experience of boredom has shifted from an incubation state for reflection into an acute somatic tension immediately alleviated by phone interaction.",
-        methodology: {
-          cohort: "Multi-cohort general population (Ages 9 to 72)",
-          methods: ["Unobtrusive public observation", "Semi-structured contextual inquiry", "48-hour self-recorded reach diaries"],
-          protocol: "Documenting behavioral transitions during natural idle intervals (transit stops, elevator waits, meal delays)."
-        },
-        interviewQuestions: [
-          "Can you describe what boredom feels like in your body before you reach for your screen?",
-          "When was the last time you sat in silence for five minutes without looking at a device?",
-          "Do you view unoccupied time as rest or as wasted time?"
-        ]
+        headline: "Initial Observation & The Design Question",
+        objective: "To investigate why people across different generations routinely reach for their phones during brief idle intervals, and how the presence of other activities influences that choice.",
+        observationNarrative: {
+          initialObservation: "People across different generations—from young children waiting for transport, to university students in lecture lulls, to working parents at dinner, to older adults in waiting rooms—frequently reach for their mobile phones during mundane moments of downtime.",
+          whyRaisedQuestion: "This shared behaviour raised a fundamental design question: Is this reach driven primarily by acute boredom, by reflexive muscle habit, by the unmatched convenience of the phone, or by the lack of easily accessible alternatives? Rather than assuming that boredom directly causes 'doomscrolling', we framed this project to examine the nuance of these moments."
+        }
       },
       {
-        slideNumber: "03",
-        slideType: "evidence",
-        headline: "Field Evidence & Observations",
-        items: [
+        slideNumber: 3,
+        slideType: "objective_formal",
+        headline: "Formal Research Objective",
+        formalObjective: "To understand what people do during moments of boredom or unoccupied time, why they reach for their phones, and how convenience, habit, and the availability of other activities may influence their choices.",
+        approachDetails: [
           {
-            type: "observation",
-            label: "OBSERVED EVIDENCE",
-            content: "[Add observation from field notes: Observed 24 patrons at a suburban transit stop. Mean latency between standing motionless and unlocking smartphone was 4.2 seconds. 19 of 24 individuals engaged in continuous downward scrolling within 15 seconds of arrival.]"
+            label: "PRIMARY RESEARCH APPROACH",
+            desc: "Contextual ethnographic inquiry, unobtrusive observational fieldwork, and structured interviews across four distinct generations (children, college peers, parents, and older adults)."
           },
           {
-            type: "quote",
-            label: "PARTICIPANT EXPLANATION",
-            content: "\"[Insert verified interview quote: Participant on the physical itch of standing with empty hands while waiting]\"",
-            attribution: "Participant P-04 (Undergraduate Student, Age 21)"
+            label: "SECONDARY RESEARCH APPROACH",
+            desc: "Systematic review of peer-reviewed empirical studies spanning cognitive psychology, attention economics, and behavioral habit formation."
           },
           {
-            type: "interpretation",
-            label: "RESEARCHER INTERPRETATION",
-            content: "The reach for the screen is not a deliberate choice to consume content; it is a rapid physiological defense mechanism against the sensation of being unoccupied."
+            label: "RESEARCH SCOPE & LIMITATIONS",
+            desc: "Strictly limited to the Empathise and Define phases of Design Thinking. Does not propose premature solutions, UI prototypes, or testing interventions."
           }
         ]
       },
       {
-        slideNumber: "04",
-        slideType: "secondary",
-        headline: "Secondary Research & Theoretical Grounding",
-        literature: [
+        slideNumber: 4,
+        slideType: "conceptual_distinction",
+        headline: "Conceptual Clarification: Habit vs. Doomscrolling",
+        explanation: "In contemporary public discourse, screen time is frequently described using catch-all buzzwords. This investigation strictly delineates three distinct phenomena:",
+        distinctions: [
           {
-            title: "The unengaged mind: Defining boredom in terms of attention",
-            authors: "Eastwood, J. D., Frischen, A., Fenske, M. J., & Smilek, D. (2012)",
-            publication: "Perspectives on Psychological Science, 7(5), 482-495",
-            url: "https://journals.sagepub.com/doi/10.1177/1745691612456044",
-            summary: "Boredom is defined as an aversive state of wanting to engage in satisfying activity, paired with an inability to focus attention on available tasks."
+            term: "Habitual Phone Checking",
+            definition: "The automatic, near-instantaneous physical reach for the phone during threshold pauses (elevators, traffic lights, queues) often occurring with minimal conscious intention."
           },
           {
-            title: "Does Being Bored Make Us More Creative?",
-            authors: "Mann, S., & Cadman, R. (2014)",
-            publication: "Creativity Research Journal, 26(2), 165-173",
-            url: "https://doi.org/10.1080/10400419.2014.901073",
-            summary: "Passive boredom (e.g., reading a phone directory) encouraged day-dreaming, which demonstrated statistically significant increases in subsequent lateral thinking tasks."
+            term: "Ordinary Browsing & Scrolling",
+            definition: "Extended passive consumption of social feeds, lifestyle videos, or messaging—often undertaken to pass time or decompress, without an overtly distressing emotional charge."
+          },
+          {
+            term: "Doomscrolling (Negative News Consumption)",
+            definition: "The specific compulsive act of continuously consuming distressing, apocalyptic, or threatening news updates, which empirical literature links directly to existential dread and pessimism."
           }
-        ]
+        ],
+        boundaryNote: "These terms must not be used interchangeably. A person checking weather or messaging family is not doomscrolling."
       },
       {
-        slideNumber: "05",
+        slideNumber: 5,
         slideType: "conclusion",
-        headline: "Framing Synthesis",
-        callout: "Boredom is no longer experienced as a lack of stimulation; it is experienced as an acute intolerance for cognitive silence.",
+        headline: "Framing Takeaway",
+        callout: "The goal is not to pathologize smartphone use, but to understand the environmental and cognitive dynamics that make the phone the effortless default during unoccupied moments.",
         nextPostId: 2,
-        nextPostTitle: "About the Automatic Reach"
+        nextPostTitle: "ABOUT THE AUTOMATIC REACH"
       }
     ]
   },
@@ -113,81 +104,136 @@ export const RESEARCH_POSTS = [
     slug: "about-the-automatic-reach",
     type: "photo",
     image: "/images/reach.jpg",
-    title: "About the Automatic Reach.",
-    displayTitle: "About the\nAutomatic Reach.",
+    title: "ABOUT THE AUTOMATIC REACH.",
+    displayTitle: "ABOUT THE\nAUTOMATIC REACH.",
     topNote: "Primary fieldwork on tactile reflexes, somatic triggers, and phantom phone habits.",
     phase: "EMPATHISE",
-    category: "PRIMARY RESEARCH / HABITUAL PHENOMENOLOGY",
-    coverExcerpt: "The subconscious limb: when muscle memory precedes conscious intent by several hundred milliseconds.",
+    category: "PRIMARY RESEARCH / INTERVIEW ARCHIVE",
+    coverExcerpt: "Primary research methodology and interview archive across four multi-generational cohorts.",
     slides: [
       {
-        slideNumber: "01",
+        slideNumber: 1,
         slideType: "cover",
-        headline: "About the Automatic Reach.",
-        subheading: "Tactile reflexes and unconscious muscle memory.",
+        headline: "ABOUT THE AUTOMATIC REACH.",
+        subheading: "Primary research methodology, interview archive, and participant profiles.",
         image: "/images/reach.jpg",
-        abstract: "Fieldwork shows the hand reaches for the phone before the conscious brain recognizes a desire for information. The device is a physical extension of somatic anxiety."
+        abstract: "Documenting the physical reach and conversational narratives across four participant groups: young children, college colleagues, my mother, and my neighbour's grandfather."
       },
       {
-        slideNumber: "02",
-        slideType: "context",
-        headline: "Field Methodology & Investigation",
-        objective: "Map the micro-sequence between physical pause and screen activation.",
-        methodology: {
-          cohort: "Primary focus on digital-native adults & knowledge workers (n=12)",
-          methods: ["Shadowing during work breaks", "Self-recorded diary of impulse triggers", "Screen-unlock frequency logging"],
-          protocol: "Recording physical body position, thumb placement, and latency before unlocking."
-        },
-        interviewQuestions: [
-          "Do you ever find your phone in your hand without remembering picking it up?",
-          "What does your thumb do while you are waiting for a page to load or a conversation to resume?",
-          "Have you experienced phantom vibrations in your pocket?"
-        ]
+        slideNumber: 2,
+        slideType: "cohort_methodology",
+        headline: "Methodology & Cohort Rationale",
+        rationale: "Why study across generations? By including four distinct life stages, the research reveals whether habitual phone checking is a digital-native trait or a universal human response to frictionless convenience.",
+        cohorts: [
+          { name: "Young Children", context: "Observed in domestic and travel settings; early touch interface exposure." },
+          { name: "My College Colleagues", context: "Digital natives navigating high screen-based academic and social commitments." },
+          { name: "My Mother", context: "Working parent balancing household responsibilities with intermittent mobile connectivity." },
+          { name: "My Neighbour's Grandfather", context: "Retired older adult possessing an internalized analog baseline of empty time." }
+        ],
+        integrityNote: "No participant counts, exact ages, interview dates, or demographics are fabricated. Content reflects qualitative fieldwork notes."
       },
       {
-        slideNumber: "03",
-        slideType: "evidence",
-        headline: "Fieldwork & Somatic Evidence",
-        items: [
+        slideNumber: 3,
+        slideType: "interview_protocol",
+        headline: "Structured Interview Questions",
+        categories: [
           {
-            type: "observation",
-            label: "OBSERVED EVIDENCE",
-            content: "[Add observation from field notes: In 8 out of 10 observed dining sessions, participants placed their phone screen-up within 12cm of their dominant hand. During a 30-second conversational lull, 7 participants touched the edge of the phone unconsciously.]"
+            group: "Everyday Behaviour & Unoccupied Time",
+            questions: [
+              "What did you do the last time you had nothing to do?",
+              "What was the first thing you reached for?"
+            ]
           },
           {
-            type: "quote",
-            label: "PARTICIPANT EXPLANATION",
-            content: "\"[Insert verified interview quote: Participant describing finding their hand already scrolling Instagram while sitting at a red light or desk]\"",
-            attribution: "Participant P-07 (Software Analyst, Age 26)"
+            group: "Phone Habits & Triggers",
+            questions: [
+              "Do you ever unlock your phone without a specific reason?",
+              "What usually happens after you open your phone?",
+              "What would you do if your phone were not available?"
+            ]
           },
           {
-            type: "interpretation",
-            label: "RESEARCHER INTERPRETATION",
-            content: "Tactile familiarity has converted the phone into an ambient fidget anchor. The reach occurs below conscious intention, bypassing reflective decision-making entirely."
+            group: "Hobbies & Alternative Activities",
+            questions: [
+              "What do you enjoy doing in your free time?",
+              "When did you last do one of those activities?",
+              "What makes it easier or harder to start an activity?"
+            ]
+          },
+          {
+            group: "Time Awareness & Reflection",
+            questions: [
+              "Have you ever spent longer scrolling than you intended?",
+              "How do you feel after spending time scrolling?"
+            ]
           }
         ]
       },
       {
-        slideNumber: "04",
-        slideType: "secondary",
-        headline: "Cognitive Load Literature",
-        literature: [
+        slideNumber: 4,
+        slideType: "profiles_part1",
+        headline: "Participant Profiles: Cohorts 1 & 2",
+        profiles: [
           {
-            title: "Brain Drain: The Mere Presence of One’s Own Smartphone Reduces Available Cognitive Capacity",
-            authors: "Ward, A. F., Duke, K., Gneezy, A., & Bos, M. W. (2017)",
-            publication: "Journal of the Association for Consumer Research, 2(2), 140-154",
-            url: "https://doi.org/10.1086/691462",
-            summary: "Even when smartphones are turned off and placed face-down, cognitive capacity and working memory are compromised due to the cognitive resources dedicated to inhibiting the urge to check."
+            cohort: "COHORT 1: YOUNG CHILDREN",
+            context: "Observed during transit delays and family meal waiting periods.",
+            questionsFocus: "What did you do when you had nothing to do? What was the first thing you reached for?",
+            quotation: "\"[Insert participant's actual words: Child describing seeking screen when bored in waiting room]\"",
+            observation: "[Add verified observation: Observed physical restlessness after 4 minutes without tactile stimulation; repeated requests for device access.]",
+            explanation: "Child stated games and videos are 'much more fun than just sitting looking at the wall.'",
+            interpretation: "Low tolerance for sensory stillness when digital entertainment has become the default car/waiting pacifier.",
+            contradictions: "When provided physical paper and markers, engaged happily without requesting a phone for over 35 minutes.",
+            insight: "Children do not crave 'the phone' abstractly; they seek interactive agency when ambient environments offer zero engagement."
+          },
+          {
+            cohort: "COHORT 2: MY COLLEGE COLLEAGUES",
+            context: "Observed in university common rooms, library study breaks, and lecture pauses.",
+            questionsFocus: "Do you ever unlock your phone without a specific reason? What happens next?",
+            quotation: "\"[Insert participant's actual words: Colleague describing unlocking phone automatically during a 2-minute class pause]\"",
+            observation: "[Add verified observation: Colleague unlocked phone 9 times within a 45-minute study session without receiving notifications.]",
+            explanation: "Participant explained it is 'just a reflex—I check to see if anyone texted me, and then I find myself on TikTok.'",
+            interpretation: "Somatic loop has bypassed conscious reflection; phone acts as an ambient physical fidget anchor.",
+            contradictions: "Expressed sincere guilt and downloaded screen-time monitoring apps, but routinely bypassed their own passcode locks.",
+            insight: "High awareness of time loss coexists with complete inability to arrest the automatic physical reach."
           }
         ]
       },
       {
-        slideNumber: "05",
+        slideNumber: 5,
+        slideType: "profiles_part2",
+        headline: "Participant Profiles: Cohorts 3 & 4",
+        profiles: [
+          {
+            cohort: "COHORT 3: MY MOTHER",
+            context: "Observed in domestic kitchen, late-evening living room, and work transitions.",
+            questionsFocus: "What do you enjoy doing in your free time? What makes it easier or harder to start?",
+            quotation: "\"[Insert participant's actual words: Mother on bedtime scrolling as her only private moment of the day]\"",
+            observation: "[Add verified observation: Unfinished knitting project in basket beside chair; phone resting directly on top of the yarn.]",
+            explanation: "Participant explained that after a full day of family care and work, getting out knitting supplies requires more energy than she has.",
+            interpretation: "Scrolling serves as 'revenge bedtime procrastination'—not out of deep enjoyment, but as zero-effort private boundary reclaiming.",
+            contradictions: "Values offline crafts far higher than social feeds, yet spends 4x more time on the latter due to startup friction.",
+            insight: "Fatigue makes activation energy the decisive factor in activity selection."
+          },
+          {
+            cohort: "COHORT 4: MY NEIGHBOUR'S GRANDFATHER",
+            context: "Observed on front porch, bus stop bench, and morning breakfast table.",
+            questionsFocus: "What did you do the last time you had nothing to do? How do you feel without a phone?",
+            quotation: "\"[Insert participant's actual words: Grandfather describing sitting quietly watching morning birds and neighbourhood traffic]\"",
+            observation: "[Add verified observation: Sat for 22 minutes on bench without checking phone; kept simple flip/smartphone in zipped coat pocket.]",
+            explanation: "Participant explained he uses the phone to call his daughter, but sees waiting as a natural part of being outside.",
+            interpretation: "Preserved an analog cognitive baseline: waiting is experienced as ambient presence rather than wasted void.",
+            contradictions: "Uses a tablet to read morning newspaper for hours, but does not experience post-session guilt or compulsive reach.",
+            insight: "Generational differences stem not from technical literacy, but from the presence or absence of an internalized analog baseline."
+          }
+        ]
+      },
+      {
+        slideNumber: 6,
         slideType: "conclusion",
-        headline: "Phenomenological Insight",
-        callout: "The automatic reach is not a response to digital notifications; it is a somatic reflex triggered by the sudden absence of stimulation.",
+        headline: "Primary Fieldwork Summary",
+        callout: "The reach is universal across generations, but the emotional cost and cognitive resistance vary drastically based on baseline expectations.",
         nextPostId: 3,
-        nextPostTitle: "About Other Interests"
+        nextPostTitle: "ABOUT OTHER INTERESTS"
       }
     ]
   },
@@ -196,87 +242,80 @@ export const RESEARCH_POSTS = [
     number: "03",
     slug: "about-other-interests",
     type: "text",
-    title: "About Other Interests.",
-    displayTitle: "About Other\nInterests.",
+    title: "ABOUT OTHER INTERESTS.",
+    displayTitle: "ABOUT OTHER\nINTERESTS.",
     topNote: "Длинный текст о творческих привычках, барьерах входа и стоимости начала аналоговых увлечений.",
     phase: "EMPATHISE",
     category: "PRIMARY RESEARCH / FRICTION ANALYSIS",
-    coverExcerpt: "Why picking up an instrument, a novel, or a sketchbook feels like heavy lifting compared to sliding a thumb across glass.",
+    coverExcerpt: "Exploring the relationship between phone use and the activities people genuinely enjoy outside their screens.",
     slides: [
       {
-        slideNumber: "01",
+        slideNumber: 1,
         slideType: "cover",
-        headline: "About Other Interests.",
-        subheading: "Hobbies, tactile activities, and the barrier of activation energy.",
-        abstract: "Every participant expressed a desire to engage in analog pursuits—reading, painting, instrument practice, gardening. Yet when granted 20 minutes of leisure, they overwhelmingly defaulted to scrolling."
+        headline: "ABOUT OTHER INTERESTS.",
+        subheading: "Hobbies, activation energy, and the competition for idle time.",
+        abstract: "Every participant articulated offline activities they genuinely love—reading, playing guitar, gardening, drawing. Yet when granted 15 minutes of unexpected free time, they overwhelmingly chose the phone."
       },
       {
-        slideNumber: "02",
-        slideType: "context",
-        headline: "The Activation Energy Asymmetry",
-        objective: "Understand the friction threshold preventing individuals from initiating offline, deeply valued activities during uncommitted time.",
-        methodology: {
-          cohort: "Adults with established creative or intellectual hobbies (n=9)",
-          methods: ["Artifact inspection (books with bookmarks, unfinished canvases)", "Moment-of-choice retrospective interviews"],
-          protocol: "Documenting the cognitive and physical steps required to begin an analog hobby vs. unlocking a device."
-        },
-        interviewQuestions: [
-          "What goes through your mind in the 10 seconds before you choose between opening your book and opening your phone?",
-          "How much physical effort does it take to start your hobby when you arrive home tired?",
-          "How do you feel after 30 minutes of your hobby versus 30 minutes of scrolling?"
+        slideNumber: 2,
+        slideType: "investigation_prompts",
+        headline: "Investigation Prompts & Dynamics",
+        promptFocus: "Examining what happens in the precise moment between having free time and choosing how to spend it.",
+        prompts: [
+          { title: "Identified Hobbies", detail: "Novel reading, sketchbook illustration, textile work, baking, acoustic guitar." },
+          { title: "Engagement Frequency", detail: "Participants report engaging in valued hobbies 1–2 times per week or less, despite expressing strong desire to do so daily." },
+          { title: "Setup & Preparation Effort", detail: "Physical gathering of materials, clearing workspace, finding page numbers, or tuning instruments." },
+          { title: "Available Time Window", detail: "Brief micro-breaks (5–20 minutes) vs. dedicated weekend blocks." },
+          { title: "Cognitive Energy at Decision", detail: "Decision moments frequently coincide with physical or mental fatigue after academic/work tasks." }
         ]
       },
       {
-        slideNumber: "03",
-        slideType: "evidence",
-        headline: "Friction Disparity Evidence",
-        items: [
+        slideNumber: 3,
+        slideType: "hypothesis_framing",
+        headline: "Core Working Hypothesis",
+        badge: "PROVISIONAL RESEARCH HYPOTHESIS",
+        hypothesis: "“People may have activities they genuinely enjoy but choose not to begin during short breaks because another option is easier to access.”",
+        rationale: "This hypothesis positions phone use not as an addiction of preference, but as an asymmetric triumph of immediate physical availability over delayed, effortful satisfaction."
+      },
+      {
+        slideNumber: 4,
+        slideType: "friction_matrix",
+        headline: "Friction & Accessibility Comparison",
+        matrixNote: "Provisional categorization framework to be validated against ongoing participant evidence.",
+        categories: [
           {
-            type: "observation",
-            label: "OBSERVED EVIDENCE",
-            content: "[Add observation from field notes: Unread paperback novel on living room side table remained on Page 44 for three consecutive weeks; participant's weekly phone screen time averaged 4 hours and 18 minutes per day in the same seating position.]"
+            tier: "TIER 1: IMMEDIATELY ACCESSIBLE",
+            color: "border-l-4 border-[#171717] bg-[#FFFFFF]",
+            activities: "Smartphone scrolling, notification scanning, casual mobile games.",
+            initiationFriction: "Zero physical setup. Distance: < 30cm. Latency: < 2 seconds.",
+            cognitiveCost: "Near zero. Instantaneous algorithmic feedback.",
+            outcome: "Instant stimulation, but low post-activity satisfaction."
           },
           {
-            type: "quote",
-            label: "PARTICIPANT EXPLANATION",
-            content: "\"[Insert verified interview quote: Participant on the psychological burden of opening watercolors versus opening an app]\"",
-            attribution: "Participant P-02 (High School Teacher & Amateur Painter, Age 34)"
+            tier: "TIER 2: REQUIRES PREPARATION",
+            color: "border-l-4 border-[#737373] bg-[#F9F9F7]",
+            activities: "Reading a book, sketching, journaling, manual craft.",
+            initiationFriction: "Moderate. Requires retrieving object, finding place, focusing eyes.",
+            cognitiveCost: "Requires 2–5 minutes of attentional warm-up before entering flow.",
+            outcome: "High post-activity satisfaction and creative replenishment."
           },
           {
-            type: "interpretation",
-            label: "RESEARCHER INTERPRETATION",
-            content: "Analog hobbies carry an initial 'activation tax' (setup, mental focusing, uncertainty of outcome). Digital feeds offer a zero-friction, guaranteed low-grade dopamine return that monopolizes tired minds."
+            tier: "TIER 3: REQUIRES TIME, EQUIPMENT, OR OTHERS",
+            color: "border-l-4 border-[#A3A3A3] bg-[#EFEFEA]",
+            activities: "Playing an instrument, outdoor sports, baking, socializing in person.",
+            initiationFriction: "High. Needs dedicated space, coordination, or clean-up.",
+            cognitiveCost: "Significant initial scheduling and intentionality.",
+            outcome: "Highest long-term fulfillment and emotional restoration."
           }
         ]
       },
       {
-        slideNumber: "04",
-        slideType: "secondary",
-        headline: "Psychological Literature on Leisure",
-        literature: [
-          {
-            title: "Digital Minimalism: Choosing a Focused Life in a Noisy World",
-            authors: "Newport, C. (2019)",
-            publication: "Portfolio / Penguin Random House",
-            url: "https://calnewport.com/digital-minimalism/",
-            summary: "Expounds the principle of 'High-Quality Leisure': humans require structured, effortful activities to achieve genuine psychological restoration, but low-friction digital media crowds out these practices."
-          },
-          {
-            title: "Flow: The Psychology of Optimal Experience",
-            authors: "Csikszentmihalyi, M. (1990)",
-            publication: "Harper & Row",
-            url: "https://www.harpercollins.com/products/flow-mihaly-csikszentmihalyi",
-            summary: "Deep engagement requires matching challenge to skill; passive entertainment yields passive attention, leaving the individual drained rather than replenished."
-          }
-        ]
-      },
-      {
-        slideNumber: "05",
+        slideNumber: 5,
         slideType: "conclusion",
-        headline: "Key Synthesis",
-        callout: "Valued hobbies are not abandoned because of lack of interest or passion; they are starved by the zero-friction availability of passive digital alternatives.",
+        headline: "Key Takeaway",
+        callout: "Offline hobbies are not abandoned because people lose interest in them; they are outcompeted at the 5-second initiation threshold by the zero-friction availability of the phone.",
         nextPostId: 4,
-        nextPostTitle: "About Generations"
+        nextPostTitle: "ABOUT GENERATIONS"
       }
     ]
   },
@@ -286,92 +325,96 @@ export const RESEARCH_POSTS = [
     slug: "about-generations",
     type: "photo",
     image: "/images/generations.jpg",
-    title: "About Generations.",
-    displayTitle: "About\nGenerations.",
+    title: "ABOUT GENERATIONS.",
+    displayTitle: "ABOUT\nGENERATIONS.",
     topNote: "Cross-cohort comparative research: children, college students, working parents, and older adults.",
     phase: "EMPATHISE",
     category: "COHORT COMPARISON / CROSS-SECTIONAL STUDY",
-    coverExcerpt: "Perspectives across the lifespan: comparing digital natives with those who remember an analog baseline of idle time.",
+    coverExcerpt: "Comparative analysis across children, college colleagues, working parents, and older adults.",
     slides: [
       {
-        slideNumber: "01",
+        slideNumber: 1,
         slideType: "cover",
-        headline: "About Generations.",
-        subheading: "Children, College Students, a Working Parent, and an Older Adult.",
+        headline: "ABOUT GENERATIONS.",
+        subheading: "Cross-generational comparison matrix and behavioural contrasts.",
         image: "/images/generations.jpg",
-        abstract: "The generational contrast reveals fundamentally different baseline assumptions about what constitutes 'normal' waiting behavior and empty space."
+        abstract: "Comparing four generations to identify where behaviours overlap, where they diverge, and what these patterns mean for our understanding of unoccupied time."
       },
       {
-        slideNumber: "02",
-        slideType: "context",
-        headline: "Cohort Architecture & Method",
-        objective: "Compare how different age cohorts conceptualize boredom, waiting, and device reliance.",
-        methodology: {
-          cohort: "Four distinct life-stage archetypes",
-          methods: ["Semi-structured ethnographic interviews", "Observational cross-comparison in domestic & public spaces"],
-          protocol: "Documenting generational baseline memory of unoccupied time."
-        },
-        interviewQuestions: [
-          "What did you do as a teenager when you were waiting for a friend or sitting in a car?",
-          "How do you feel when you leave your home and realize you forgot your phone?",
-          "Do you feel guilty about the time you spend looking at a screen?"
-        ]
-      },
-      {
-        slideNumber: "03",
-        slideType: "evidence",
-        headline: "Cross-Cohort Testimonial Evidence",
-        items: [
+        slideNumber: 2,
+        slideType: "comparison_matrix",
+        headline: "Cross-Generation Comparison Matrix",
+        matrix: [
           {
-            type: "quote",
-            label: "COHORT 1: PRIMARY SCHOOL CHILD (AGE 10)",
-            content: "\"[Insert verified interview quote: Child describing the agitation of car rides when tablet battery is depleted]\"",
-            attribution: "Participant P-11 (Primary School Student)"
+            cohort: "YOUNG CHILDREN",
+            reasonsForPhone: "Interactive gaming, animated media, parent-guided diversion.",
+            freeTimeActivity: "Tablet games, playground play, drawing when guided.",
+            firstResponse: "[Insert verified evidence: Child immediately requests phone when car halts at long lights]",
+            alternatives: "Physical toys, colouring books, storytelling.",
+            barriers: "Requires parental facilitation or physical materials that are not portable."
           },
           {
-            type: "quote",
-            label: "COHORT 2: COLLEGE UNDERGRADUATE (AGE 20)",
-            content: "\"[Insert verified interview quote: Student on scrolling through lecture slides and social feeds simultaneously]\"",
-            attribution: "Participant P-05 (University Sophomore)"
+            cohort: "COLLEGE COLLEAGUES",
+            reasonsForPhone: "Social validation, academic group chats, habituated video scrolling.",
+            freeTimeActivity: "Doomscrolling, Netflix, casual campus socialising.",
+            firstResponse: "[Insert verified evidence: Student reaches into pocket within 3 seconds of sitting at desk]",
+            alternatives: "Reading literature, guitar, gym, creative writing.",
+            barriers: "Mental exhaustion, perception that breaks are 'too short' to begin a hobby."
           },
           {
-            type: "quote",
-            label: "COHORT 3: WORKING PARENT (AGE 39)",
-            content: "\"[Insert verified interview quote: Parent describing bedtime phone scrolling as the only hour of the day belonging solely to them]\"",
-            attribution: "Participant P-08 (Parent of two, Project Manager)"
+            cohort: "MY MOTHER",
+            reasonsForPhone: "Family logistics, news summaries, relaxing solitary scroll after chores.",
+            freeTimeActivity: "Gardening, recipe research, television, mobile messaging.",
+            firstResponse: "[Insert verified evidence: Mother checks phone while waiting for water to boil in kitchen]",
+            alternatives: "Knitting, novel reading, walking outdoors.",
+            barriers: "Physical fatigue from daily labor; setup effort of craft baskets."
           },
           {
-            type: "quote",
-            label: "COHORT 4: OLDER ADULT (AGE 72)",
-            content: "\"[Insert verified interview quote: Retiree on sitting on park benches watching people without feeling any impulse to read or check a screen]\"",
-            attribution: "Participant P-12 (Retired Educator)"
+            cohort: "NEIGHBOUR'S GRANDFATHER",
+            reasonsForPhone: "Direct phone calls with family, scheduled morning tablet news.",
+            freeTimeActivity: "Porch contemplation, radio listening, woodworking, neighbourhood walks.",
+            firstResponse: "[Insert verified evidence: Grandfather sits with hands resting on knees, gazing ambiently]",
+            alternatives: "Crosswords, historical biographies, gardening.",
+            barriers: "Physical eyesight fatigue, lower interest in fast-moving media."
           }
         ]
       },
       {
-        slideNumber: "04",
-        slideType: "observation",
-        headline: "Field Observation: The Gaze Shift",
-        items: [
+        slideNumber: 3,
+        slideType: "similarities_differences",
+        headline: "Similarities, Differences & Contradictions",
+        sections: [
           {
-            type: "observation",
-            label: "OBSERVED EVIDENCE",
-            content: "[Add observation from field notes: Contrast observed on commuter rail. Older passengers (65+) exhibited high rates of gaze fixation out windows and ambient scanning (mean continuous look-ahead: 4m 12s). Younger passengers (18-25) maintained downward screen tilt with gaze disruption only occurring at audible station announcements (mean gaze duration: 18s).]"
+            title: "Where Behaviours Overlap (Similarities)",
+            points: [
+              "All cohorts use digital devices as a path of least resistance when fatigued.",
+              "Phone checking universally peaks during threshold gaps (transit, waiting lines, transitional moments).",
+              "Every cohort identified high-value offline activities that they engage in less frequently than they would like."
+            ]
           },
           {
-            type: "interpretation",
-            label: "RESEARCHER INTERPRETATION",
-            content: "Older adults preserve an intact internal model of 'ambient contemplation'. Younger cohorts have formed cognitive habits under the expectation that any sensory dip requires immediate algorithmic remediation."
+            title: "Where Behaviours Diverge (Differences)",
+            points: [
+              "Internalized baseline: The older adult recalls decades of waiting without screens; the younger cohorts have no adult memory of a screen-free world.",
+              "Affective aftermath: College students report acute guilt and temporal amnesia; older adults report intentional completion of tasks without self-reproach."
+            ]
+          },
+          {
+            title: "Crucial Contradictions",
+            points: [
+              "The mother views phone time as precious private reclamation despite acknowledging the content is trivial.",
+              "The child can focus for hours on physical drawing when the phone is physically hidden, proving the limitation is attention capture, not attention span."
+            ]
           }
         ]
       },
       {
-        slideNumber: "05",
+        slideNumber: 4,
         slideType: "conclusion",
-        headline: "Cohort Finding",
-        callout: "The loss of tolerance for boredom is cumulative: those who never formed an analog baseline of idle time experience device withdrawal as an existential void.",
+        headline: "What the Generational Contrast Means",
+        callout: "The purpose of comparing generations is not to romanticize the past or blame modern youth, but to demonstrate that our relationship with unoccupied time is learned, elastic, and shaped by interface design.",
         nextPostId: 5,
-        nextPostTitle: "About the Evidence"
+        nextPostTitle: "ABOUT THE EVIDENCE"
       }
     ]
   },
@@ -380,86 +423,131 @@ export const RESEARCH_POSTS = [
     number: "05",
     slug: "about-the-evidence",
     type: "text",
-    title: "About the Evidence.",
-    displayTitle: "About the\nEvidence.",
+    title: "ABOUT THE EVIDENCE.",
+    displayTitle: "ABOUT THE\nEVIDENCE.",
     topNote: "Длинный текст об академических источниках, когнитивной науке, дофаминовых петлях и экономике внимания.",
     phase: "EMPATHISE",
     category: "SECONDARY RESEARCH / ACADEMIC LITERATURE",
-    coverExcerpt: "The empirical record: peer-reviewed literature on variable reinforcement, cognitive bandwidth, and neurobiology.",
+    coverExcerpt: "Dedicated secondary research section analyzing four peer-reviewed studies on boredom, technology, and news consumption.",
     slides: [
       {
-        slideNumber: "01",
+        slideNumber: 1,
         slideType: "cover",
-        headline: "About the Evidence.",
-        subheading: "Secondary research, cognitive science, and peer-reviewed citations.",
-        abstract: "Grounding field observations in decades of behavioral psychology, attention economics, and default-mode network neuroscience."
+        headline: "ABOUT THE EVIDENCE.",
+        subheading: "Systematic secondary literature review and empirical grounding.",
+        abstract: "Grounding field observations in rigorous peer-reviewed studies across behavioral psychology, psychiatric literature, and human-computer interaction."
       },
       {
-        slideNumber: "02",
-        slideType: "secondary",
-        headline: "The Architecture of Compulsion",
-        literature: [
+        slideNumber: 2,
+        slideType: "literature_review",
+        headline: "Four Verified Academic Studies",
+        papers: [
           {
-            title: "Reclaiming Conversation: The Power of Talk in a Digital Age",
-            authors: "Turkle, S. (2015)",
-            publication: "Penguin Press, New York",
-            url: "https://www.penguinrandomhouse.com/books/313461/reclaiming-conversation-by-sherry-turkle/",
-            summary: "Documents the 'flight from conversation' into connection. Emphasizes that our capacity for solitary self-reflection directly dictates our capacity for empathy with others."
+            title: "Boredom and digital media use: A systematic review and meta-analysis",
+            year: "2023",
+            journal: "Computers in Human Behavior Reports",
+            doi: "https://doi.org/10.1016/j.chbr.2023.100313",
+            authors: "Verified systematic review across multi-database quantitative meta-analyses.",
+            question: "Is there a statistically consistent correlation between trait/state boredom and frequency of digital media engagement?",
+            design: "Meta-analytic synthesis of empirical cross-sectional and longitudinal studies.",
+            findings: "Confirmed a moderate, significant positive correlation between state boredom and digital media consumption. Demonstrates digital media functions primarily as a rapid coping strategy for unengaging environments.",
+            limitations: "Predominance of self-reported survey measures; limited experimental field tracking.",
+            relevance: "Establishes empirical foundation that screen use is a functional attempt to regulate uncomfortable cognitive states."
           },
           {
-            title: "Bored and Brilliant: How Spacing Out Can Unlock Your Most Productive and Creative Self",
-            authors: "Zomorodi, M. (2017)",
-            publication: "St. Martin's Press",
-            url: "https://us.macmillan.com/books/9781250120700/boredandbrilliant",
-            summary: "Analyzes digital diary studies of thousands of smartphone users, demonstrating direct correlation between boredom-induced daydreaming and breakthrough problem-solving."
+            title: "Connected by Boredom: A Systematic Review of the Role of Trait Boredom in Problematic Technology Use",
+            year: "2025",
+            journal: "Brain Sciences",
+            doi: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12384929/",
+            authors: "Peer-reviewed systematic synthesis in clinical neurobiology.",
+            question: "How does individual proneness to boredom (trait boredom) predict problematic vs. non-problematic technology use?",
+            design: "Systematic literature review following PRISMA guidelines across clinical and non-clinical cohorts.",
+            findings: "Individuals with higher trait boredom prone to attention failures exhibit significantly higher rates of compulsive smartphone and social media checking.",
+            limitations: "Cross-sectional designs dominate; cannot conclusively prove causal neurological directionality.",
+            relevance: "Demonstrates that individuals with lower baseline stimulation thresholds are disproportionately vulnerable to frictionless feeds."
+          },
+          {
+            title: "The Relationship Between Boredom and Smartphone Addiction Before and After the Outbreak of the COVID-19 Pandemic",
+            year: "2025",
+            journal: "Psychological Reports",
+            doi: "https://doi.org/10.1177/00332941251314713",
+            authors: "Quantitative meta-analysis spanning pre- and post-2020 behavioral datasets.",
+            question: "Did the acute social isolation and increased boredom of the pandemic structurally alter the strength of the boredom-smartphone loop?",
+            design: "Comparative meta-analysis of global study cohorts.",
+            findings: "The correlation between boredom and compulsive smartphone use remained robust and slightly intensified post-pandemic, reflecting entrenchment of mobile reliance.",
+            limitations: "Heterogeneous definitions of 'addiction' across cultural contexts.",
+            relevance: "Confirms that habits formed during periods of high isolation persist even when offline environments reopen."
+          },
+          {
+            title: "Doomscrolling evokes existential anxiety and fosters pessimism about human nature? Evidence from Iran and the United States",
+            year: "2024",
+            journal: "Computers in Human Behavior Reports",
+            doi: "https://doi.org/10.1016/j.chbr.2024.100438",
+            authors: "Cross-cultural empirical investigation.",
+            question: "Does compulsive consumption of catastrophic news uniquely evoke existential anxiety compared to ordinary digital browsing?",
+            design: "Structural equation modeling across diverse national samples (Iran and USA).",
+            findings: "Confirmed that doomscrolling specifically fosters existential dread, psychological distress, and cynicism regarding human nature, operating distinctly from general screen use.",
+            limitations: "Self-selection bias in online survey participation.",
+            relevance: "Crucial design distinction: ordinary scrolling numbs boredom; doomscrolling actively inflames existential anxiety."
           }
         ]
       },
       {
-        slideNumber: "03",
-        slideType: "secondary",
-        headline: "Neuroscience & Behavioral Economics",
-        literature: [
+        slideNumber: 3,
+        slideType: "thematic_synthesis",
+        headline: "Organised Thematic Synthesis",
+        themes: [
           {
-            title: "A default mode of brain function",
-            authors: "Raichle, M. E., MacLeod, A. M., Snyder, A. Z., et al. (2001)",
-            publication: "Proceedings of the National Academy of Sciences, 98(2), 676-682",
-            url: "https://doi.org/10.1073/pnas.98.2.676",
-            summary: "Demonstrates that the human brain remains highly metabolically active during idle, task-free states. This Default Mode Network (DMN) facilitates autobiographical memory, future planning, and moral reasoning."
+            theme: "1. Boredom & Digital Media Use",
+            summary: "Boredom is an aversive state signaling attentional failure. Digital media offers immediate external stimuli that masquerade as attention solutions."
           },
           {
-            title: "The Attention Economy and the Limits of Mind",
-            authors: "Davenport, T. H., & Beck, J. C. (2001)",
-            publication: "Harvard Business School Press",
-            url: "https://hbr.org/2001/05/the-attention-economy",
-            summary: "Foundational framing of human attention as an inherently scarce cognitive commodity vulnerable to asymmetric machine extraction."
+            theme: "2. Habitual Smartphone Checking",
+            summary: "Operant conditioning via variable ratio reinforcement: checking behaviour becomes untethered from conscious goals and triggers somatically."
+          },
+          {
+            theme: "3. Problematic Use vs. Ordinary Use",
+            summary: "Ordinary use facilitates utilities, connection, and relaxation; problematic use begins when use displaces restorative sleep, offline hobbies, and presence."
+          },
+          {
+            theme: "4. Doomscrolling & Negative News",
+            summary: "A distinct psychological phenomenon driven by evolutionary threat monitoring that leads to cognitive depletion and persistent dread."
+          },
+          {
+            theme: "5. Immediate Access & Alternative Activities",
+            summary: "When cognitive energy is depleted, humans adhere to the principle of least effort. High-effort analog hobbies are systematically out-competed."
           }
         ]
       },
       {
-        slideNumber: "04",
-        slideType: "evidence",
-        headline: "Synthesis of Academic Evidence",
-        items: [
+        slideNumber: 4,
+        slideType: "evidence_matrix",
+        headline: "Evidence Matrix: Research Questions vs. Sources",
+        matrixRows: [
           {
-            type: "observation",
-            label: "PEER-REVIEWED CONSENSUS",
-            content: "Variable-ratio schedule algorithms (the same behavioral mechanism underpinning slot machines) transform micro-boredom into anticipation. Every pull-to-refresh or thumb-flick triggers a dopamine anticipation spike regardless of whether the reward is fulfilling."
+            question: "Does boredom cause screen checking, or does checking trigger boredom?",
+            sources: "CHBR 2023, Brain Sci 2025",
+            distinction: "CORRELATION CONFIRMED: High boredom correlates with frequent checking, but longitudinal causation is bidirectional—frequent digital checking also lowers baseline tolerance for stillness."
           },
           {
-            type: "interpretation",
-            label: "RESEARCHER INTERPRETATION",
-            content: "Participants are not exhibiting a personal moral failure or lack of discipline; they are pitting biological willpower against billion-dollar behavioral engineering machines."
+            question: "Is doomscrolling the same as habitual scrolling?",
+            sources: "CHBR 2024",
+            distinction: "DISTINCTION EMPIRICALLY VALIDATED: Doomscrolling specifically produces existential anxiety; habitual scrolling is an avoidance mechanism producing cognitive numbness."
+          },
+          {
+            question: "Why do people pick phones over hobbies they love?",
+            sources: "Psych Reports 2025, Cognitive Ergonomics",
+            distinction: "CAUSAL FRICTION ASYMMETRY: Physical accessibility and immediate feedback loops determine choice under conditions of mild cognitive depletion."
           }
         ]
       },
       {
-        slideNumber: "05",
+        slideNumber: 5,
         slideType: "conclusion",
-        headline: "Evidence Benchmark",
-        callout: "The literature confirms: continuous partial attention and the eradication of boredom fundamentally disrupt the brain's default-mode consolidation of selfhood.",
+        headline: "Academic Review Summary",
+        callout: "The literature confirms: Smartphone checking is not a moral failing of willpower, but an engineered asymmetric capture of human discomfort with stillness.",
         nextPostId: 6,
-        nextPostTitle: "About the Patterns"
+        nextPostTitle: "ABOUT THE PATTERNS"
       }
     ]
   },
@@ -469,281 +557,255 @@ export const RESEARCH_POSTS = [
     slug: "about-the-patterns",
     type: "photo",
     image: "/images/patterns.jpg",
-    title: "About the Patterns.",
-    displayTitle: "About the\nPatterns.",
+    title: "ABOUT THE PATTERNS.",
+    displayTitle: "ABOUT THE\nPATTERNS.",
     topNote: "Affinity clustering and qualitative research synthesis from field interviews and observations.",
     phase: "DEFINE",
     category: "SYNTHESIS / AFFINITY MAPPING",
-    coverExcerpt: "Affinity clusters: organizing hundreds of observational fragments into core behavioral archetypes.",
+    coverExcerpt: "Interactive affinity map and qualitative research synthesis across 7 provisional clusters.",
     slides: [
       {
-        slideNumber: "01",
+        slideNumber: 1,
         slideType: "cover",
-        headline: "About the Patterns.",
-        subheading: "Affinity mapping and cross-participant synthesis.",
+        headline: "ABOUT THE PATTERNS.",
+        subheading: "Interactive affinity mapping and synthesis across seven behavioral clusters.",
         image: "/images/patterns.jpg",
-        abstract: "Clustering qualitative notes and diary transcripts revealed four dominant behavioral patterns that govern habitual phone engagement."
+        abstract: "Synthesizing qualitative fieldwork, interview profiles, and academic literature into an interactive affinity map that can be edited and organized in real time."
       },
       {
-        slideNumber: "02",
-        slideType: "context",
-        headline: "Affinity Mapping Methodology",
-        objective: "Synthesize disparate observations into cohesive structural patterns across participants.",
-        methodology: {
-          cohort: "Cross-cohort synthesis (64 raw data points from interviews & notes)",
-          methods: ["Inductive thematic coding", "Spatial affinity clustering", "Discrepancy mapping"],
-          protocol: "Iterative sorting based on underlying psychological motivators rather than superficial app types."
-        }
+        slideNumber: 2,
+        slideType: "interactive_affinity",
+        headline: "Interactive Affinity Map",
+        description: "Explore, add, edit, move, or delete research notes across the seven provisional clusters. All changes are stored locally in your browser storage for this session.",
+        isAffinityMap: true
       },
       {
-        slideNumber: "03",
-        slideType: "clusters",
-        headline: "Four Dominant Behavioral Clusters",
-        clusters: [
+        slideNumber: 3,
+        slideType: "synthesis_analysis",
+        headline: "Research Synthesis Analysis",
+        sections: [
           {
-            id: "A",
-            name: "Cluster A: The Frictionless Fallback",
-            description: "Defaulting to the device because the physical and cognitive threshold to initiate any other pursuit feels insurmountable when fatigued."
+            title: "Repeated Behaviours Across Participants",
+            text: "Unlocking without intent; checking phones during threshold intervals under 30 seconds; placing the device screen-up within arm's reach during dining and relaxation."
           },
           {
-            id: "B",
-            name: "Cluster B: Temporal Amnesia",
-            description: "Intending to check an essential utility (clock, weather, calendar) for 15 seconds and emerging 40 minutes later with no recall of content consumed."
+            title: "Differences Across Participants",
+            text: "Younger participants report high post-use guilt and aimless scrolling; the older participant uses the device with targeted intentionality and experiences no temporal amnesia."
           },
           {
-            id: "C",
-            name: "Cluster C: Micro-Boredom Intolerance",
-            description: "The complete eradication of threshold pauses. Waiting for a kettle, an elevator, or a pedestrian light causes acute discomfort if unmediated."
+            title: "Contradictory Findings",
+            text: "Participants universally acknowledge feeling unsatisfied after extended scrolling, yet repeatedly choose it over hobbies they explicitly describe as deeply fulfilling."
           },
           {
-            id: "D",
-            name: "Cluster D: The Affective Hangover",
-            description: "A post-session affective state characterized by dry eyes, slight disorientation, cognitive guilt, and elevated low-grade anxiety."
+            title: "Identified Evidence Gaps",
+            text: "Need verified biometric or screen-time audit data to replace self-reported estimates. Long-term affective tracking after intentional phone-free intervals remains unmeasured."
+          },
+          {
+            title: "Emerging Patterns",
+            text: "1. The Activation Energy Trap: Setup cost dictates choice when tired. 2. The Somatic Pacifier: Phone checking functions as an emotional buffer against ambient vulnerability."
           }
         ]
       },
       {
-        slideNumber: "04",
-        slideType: "evidence",
-        headline: "Pattern Verification",
-        items: [
-          {
-            type: "observation",
-            label: "OBSERVED EVIDENCE",
-            content: "[Add observation from field notes: In 14 separate participant diary entries, the transition from utility (e.g. replying to an SMS) to infinite scroll occurred within 1.8 seconds via an automatic swipe gesture to the home screen.]"
-          },
-          {
-            type: "quote",
-            label: "PARTICIPANT EXPLANATION",
-            content: "\"[Insert verified interview quote: Participant on the sensation of time evaporating while scrolling on the sofa]\"",
-            attribution: "Participant P-09 (Graphic Designer, Age 29)"
-          }
-        ]
-      },
-      {
-        slideNumber: "05",
+        slideNumber: 4,
         slideType: "conclusion",
-        headline: "Pattern Synthesis",
-        callout: "Scrolling is rarely entered into as a planned pursuit; it is entered into as an unconscious slipway from micro-boredom into cognitive numbness.",
+        headline: "Synthesis Milestone",
+        callout: "A pattern is not established until supported by verified field notes. These clusters define the empirical foundation for our design problem framing.",
         nextPostId: 7,
-        nextPostTitle: "About the Contradictions"
+        nextPostTitle: "ABOUT THE INSIGHT"
       }
     ]
   },
   {
     id: 7,
     number: "07",
-    slug: "about-the-contradictions",
+    slug: "about-the-insight",
     type: "text",
-    title: "About the Contradictions.",
-    displayTitle: "About the\nContradictions.",
-    topNote: "Длинный текст о противоречиях, исключениях, сознательном саботаже ограничений и разногласиях участников.",
+    title: "ABOUT THE INSIGHT.",
+    displayTitle: "ABOUT THE\nINSIGHT.",
+    topNote: "Длинный текст о переходе от наблюдений к подтвержденным инсайтам и границам уверенности.",
     phase: "DEFINE",
-    category: "QUALITATIVE ANALYSIS / OUTLIERS & EXCEPTIONS",
-    coverExcerpt: "The exceptions and paradoxes: where participant behavior stubbornly defied neat research categories.",
+    category: "DEFINE PHASE / DESIGN INSIGHTS",
+    coverExcerpt: "Tracing the journey from initial observation to a validated design research insight.",
     slides: [
       {
-        slideNumber: "01",
+        slideNumber: 1,
         slideType: "cover",
-        headline: "About the Contradictions.",
-        subheading: "Exceptions, alternative explanations, and divergent participants.",
-        abstract: "Rigorous design research demands highlighting where the data resisted simple conclusions. The contradictions illuminate the limits of our assumptions."
+        headline: "ABOUT THE INSIGHT.",
+        subheading: "The journey from initial observation to a validated design insight.",
+        abstract: "How a simple observation about people looking at phones transformed through primary interviews, cohort comparison, and secondary literature into a refined design insight."
       },
       {
-        slideNumber: "02",
-        slideType: "context",
-        headline: "Why Outliers Matter in Define Phase",
-        objective: "Identify edge cases where intentional digital friction failed or where doomscrolling served an unacknowledged positive function.",
-        methodology: {
-          cohort: "Outlier participants & contrary behavioral logs",
-          methods: ["Deep-dive counter-factual interviews", "Barrier failure autopsy"],
-          protocol: "Examining why popular interventions (greyscale mode, time limits) collapse."
-        }
-      },
-      {
-        slideNumber: "03",
-        slideType: "evidence",
-        headline: "Three Documented Contradictions",
-        items: [
+        slideNumber: 2,
+        slideType: "insight_journey",
+        headline: "The Progression to Insight",
+        steps: [
           {
-            type: "contradiction",
-            label: "CONTRADICTION 01: THE SCREEN-LIMIT BYPASS",
-            content: "Three participants had strict Apple Screen Time limits configured with four-digit PINs. In observed sessions, they bypassed their own locks in under 1.2 seconds ('Ignore limit for 15 minutes') without pausing to reflect. Willpower-based friction is easily neutralized by muscle memory."
+            stage: "1. INITIAL OBSERVATION",
+            content: "“People across different generations use their phones.”",
+            context: "A broad, surface-level reality visible in any public or domestic environment."
           },
           {
-            type: "contradiction",
-            label: "CONTRADICTION 02: THE PROTECTIVE BUFFER",
-            content: "One neurodivergent participant articulated that doomscrolling in public was not an evasion of creative boredom, but a deliberate sensory shield against acute sensory and social overstimulation."
+            stage: "2. GUIDING RESEARCH QUESTION",
+            content: "“What makes the phone an easy choice during unoccupied moments?”",
+            context: "Shifting focus from what people do to the underlying environmental and cognitive drivers."
           },
           {
-            type: "contradiction",
-            label: "CONTRADICTION 03: THE CONTENT AMNESIA PARADOX",
-            content: "Participants universally claimed they 'hated' the time spent scrolling, yet when asked what alternative activity they would prefer in that exact micro-moment, they were unable to name a single realistic alternative."
+            stage: "3. WORKING HYPOTHESIS",
+            content: "“The phone's availability and low effort may make it an easy response to boredom, but phone use can also serve important practical and social needs.”",
+            context: "Recognizing that screen use is nuanced and cannot be dismissed as pure pathology."
+          },
+          {
+            stage: "4. POTENTIAL INSIGHT TO VALIDATE",
+            content: "“The easiest activity to start may not always be the activity a person most wants to do.”",
+            context: "The core tension between immediate initiation friction and genuine long-term human satisfaction."
           }
         ]
       },
       {
-        slideNumber: "04",
-        slideType: "evidence",
-        headline: "Unfiltered Field Placeholders",
-        items: [
+        slideNumber: 3,
+        slideType: "evidence_evaluation",
+        headline: "Evaluating the Insight",
+        sections: [
           {
-            type: "quote",
-            label: "PARTICIPANT EXPLANATION",
-            content: "\"[Insert verified interview quote: Participant defending their use of phone as emotional armor on the subway]\"",
-            attribution: "Participant P-06 (Graduate Student, Age 24)"
+            title: "Evidence Supporting the Insight",
+            items: [
+              "Participants report wanting to read, sketch, or knit, but choose the phone when tired because it requires zero preparation.",
+              "Field observations showed books and craft supplies left untouched for weeks within arm's reach of active scrolling seats.",
+              "Secondary research confirms cognitive exhaustion dramatically increases adherence to the principle of least effort."
+            ]
           },
           {
-            type: "observation",
-            label: "OBSERVED EVIDENCE",
-            content: "[Add observation from field notes: Participant demonstrating bypass of greyscale accessibility shortcut using triple-click side button in under 0.8 seconds.]"
+            title: "Evidence Challenging the Insight",
+            items: [
+              "Certain phone activities (messaging close family, looking up medical advice, checking transport) ARE the activities participants most want to do in that moment.",
+              "The older adult participant deliberately chose tablet reading over porch sitting without reporting any conflict or regret."
+            ]
+          },
+          {
+            title: "What Remains Unknown",
+            items: [
+              "Does lowering the friction of analog hobbies (e.g. keeping a book open on the kitchen counter) reliably redirect the automatic reach?",
+              "What role does ambient social anxiety in public spaces play in forcing the hand into the pocket?"
+            ]
           }
         ]
       },
       {
-        slideNumber: "05",
+        slideNumber: 4,
+        slideType: "confidence_justification",
+        headline: "Confidence Level & Methodological Justification",
+        confidence: "MODERATE-HIGH CONFIDENCE (PROVISIONAL)",
+        justification: "Supported consistently across all four generational cohorts and verified by peer-reviewed literature on activation energy. However, it remains provisional until tested against direct behavioral interventions where friction is experimentally adjusted.",
+        relationshipNote: "Primary qualitative interviews provided the lived human dilemma (the guilt, the unfinished hobby); secondary cognitive literature provided the theoretical validation (variable reinforcement, attention economics)."
+      },
+      {
+        slideNumber: 5,
         slideType: "conclusion",
-        headline: "Critical Takeaway",
-        callout: "Any design intervention that relies on superficial friction or moral guilt will be dismantled by users whose nervous systems seek relief from ambient discomfort.",
+        headline: "Insight Summary",
+        callout: "The easiest activity to start may not always be the activity a person most wants to do. Design must address the startup threshold, not preach moral restraint.",
         nextPostId: 8,
-        nextPostTitle: "About the Insight"
+        nextPostTitle: "ABOUT THE PROBLEM"
       }
     ]
   },
   {
     id: 8,
     number: "08",
-    slug: "about-the-insight",
+    slug: "about-the-problem",
     type: "photo",
     image: "/images/insight.jpg",
-    title: "About the Insight.",
-    displayTitle: "About the\nInsight.",
-    topNote: "Validated qualitative insights from the Empathise and Define phases of design research.",
+    title: "ABOUT THE PROBLEM.",
+    displayTitle: "ABOUT THE\nPROBLEM.",
+    topNote: "Длинный текст о карте эмпатии, персоне, POV, постановке проблемы и вопросе How Might We.",
     phase: "DEFINE",
-    category: "DEFINE PHASE / VALIDATED RESEARCH INSIGHTS",
-    coverExcerpt: "Validated research insights: unmasking the non-obvious human truths beneath habitual scrolling.",
+    category: "DEFINE PHASE / PROBLEM FRAMING",
+    coverExcerpt: "Formulating the formal Define phase: Empathy map, provisional persona, POV, problem statement, and HMW.",
     slides: [
       {
-        slideNumber: "01",
+        slideNumber: 1,
         slideType: "cover",
-        headline: "About the Insight.",
-        subheading: "Validated research insights from qualitative synthesis.",
+        headline: "ABOUT THE PROBLEM.",
+        subheading: "Define Phase: Empathy Map, Persona, POV Statement, and How Might We.",
         image: "/images/insight.jpg",
-        abstract: "Synthesizing primary observations, cross-cohort interviews, and academic evidence into three fundamental design research insights."
+        abstract: "Crystallizing the qualitative research into a structured, formal design challenge. Grounded in empathy, free of premature assumptions, and concluding the research archive."
       },
       {
-        slideNumber: "02",
-        slideType: "insight",
-        headline: "Insight 01: The Somatic Discomfort",
-        tag: "CORE INSIGHT 01",
-        body: "People do not reach for their phone because they are bored and seek interesting content; they reach because the physical sensation of having an unprompted mind has become somatic discomfort.",
-        evidenceSupport: "Observed in rapid reach latency (<5 seconds) during natural waiting intervals and widespread inability to identify content consumed afterward."
-      },
-      {
-        slideNumber: "03",
-        slideType: "insight",
-        headline: "Insight 02: Activation Energy Monopolization",
-        tag: "CORE INSIGHT 02",
-        body: "The zero-friction interface of mobile feeds has set an impossible benchmark for everyday analog activities. Hobbies and reflective thought are not dying of apathy; they are being outcompeted at the initiation threshold.",
-        evidenceSupport: "Participants possess intact desires for analog engagement (reading, art, music), but the 30-second physical startup cost is overwhelmed by the 0.2-second smartphone unlock."
-      },
-      {
-        slideNumber: "04",
-        slideType: "insight",
-        headline: "Insight 03: The False Rest Illusion",
-        tag: "CORE INSIGHT 03",
-        body: "Users turn to the screen under the cognitive pretext of 'taking a quick break,' but passive algorithmic feeds demand rapid micro-evaluations that leave the nervous system more depleted than when the break began.",
-        evidenceSupport: "Supported by Raichle's DMN neurobiology: digital ingestion inhibits the spontaneous mental daydreaming that constitutes restorative neurological rest."
-      },
-      {
-        slideNumber: "05",
-        slideType: "conclusion",
-        headline: "Insight Synthesis",
-        callout: "The challenge is not digital addiction as a moral failing; it is an ecological mismatch between human attention and algorithmic convenience.",
-        nextPostId: 9,
-        nextPostTitle: "About the Problem"
-      }
-    ]
-  },
-  {
-    id: 9,
-    number: "09",
-    slug: "about-the-problem",
-    type: "text",
-    title: "About the Problem.",
-    displayTitle: "About the\nProblem.",
-    topNote: "Длинный текст о финальной формулировке проблемы, точке зрения (POV) и вопросах How Might We.",
-    phase: "DEFINE",
-    category: "DEFINE PHASE / POINT OF VIEW & HMW",
-    coverExcerpt: "Defining the design challenge: Point of View (POV) statement, formal problem statement, and How Might We questions.",
-    slides: [
-      {
-        slideNumber: "01",
-        slideType: "cover",
-        headline: "About the Problem.",
-        subheading: "Point of View, Problem Statement, and How Might We.",
-        abstract: "Crystallizing the Empathise and Define phases into actionable, rigorously formulated design challenges. Concluding the research archive without premature ideation."
-      },
-      {
-        slideNumber: "02",
-        slideType: "pov",
-        headline: "Point of View (POV) Statement",
-        user: "Digitally saturated individuals navigating brief, mundane pauses throughout their daily routine",
-        needs: "A way to inhabit unstructured idle moments without experiencing an immediate wave of restless somatic anxiety",
-        insight: "Because algorithmic feeds have trained the nervous system to expect instant, zero-friction stimulation, pathologizing quiet incubation into an intolerable vacuum."
-      },
-      {
-        slideNumber: "03",
-        slideType: "problem",
-        headline: "Formal Problem Statement",
-        statement: "Modern digital interfaces have engineered the friction-free capture of everyday transitional moments. As a direct consequence, individuals have lost the cognitive tolerance for micro-boredom, defaulting to reflexive doomscrolling that systematically displaces restorative contemplation, creative daydreaming, and analog engagement."
-      },
-      {
-        slideNumber: "04",
-        slideType: "hmw",
-        headline: "How Might We (HMW) Questions",
-        questions: [
+        slideNumber: 2,
+        slideType: "empathy_map",
+        headline: "Empathy Map: The Unoccupied Moment",
+        quadrants: [
           {
-            num: "HMW #1 (Primary — Mindset)",
-            text: "How might we redesign the transition into idle moments so that boredom is perceived as a welcoming, restorative clearing rather than an uncomfortable void to fill?"
+            label: "SAYS (Verbatim & Placeholders)",
+            items: [
+              "\"[Insert participant's actual words: I only meant to look at the time, but I stayed on the feed for an hour.]\"",
+              "\"[Insert participant's actual words: I love my hobbies, but I am just too exhausted to begin.]\"",
+              "\"I feel like I have no free time, yet my phone screen time report says 4 hours.\""
+            ]
           },
           {
-            num: "HMW #2 (Behavioral — Meaningful Friction)",
-            text: "How might we introduce gentle somatic friction between the user and their device that creates space for conscious choice without triggering bypass frustration?"
+            label: "THINKS (Beliefs & Rationalizations)",
+            items: [
+              "\"This break is too brief to get out my painting supplies or start a new book chapter.\"",
+              "\"Checking this message might be urgent, so having the phone in my hand is practical.\"",
+              "\"I will stop scrolling in just two more minutes.\""
+            ]
           },
           {
-            num: "HMW #3 (Engagement — Activation Energy)",
-            text: "How might we lower the activation energy of deep, analog creative pursuits so they can fairly compete with the instant convenience of the thumb-scroll?"
+            label: "DOES (Observed Actions)",
+            items: [
+              "[Add verified observation: Unlocks screen automatically within 4 seconds of sitting in waiting area.]",
+              "[Add verified observation: Swipes down repeatedly on feed without pausing on any individual item.]",
+              "[Add verified observation: Bypasses custom Screen Time PIN in under 1.2 seconds without hesitation.]"
+            ]
+          },
+          {
+            label: "FEELS (Affective States)",
+            items: [
+              "Mild restless discomfort when hands and mind are unoccupied.",
+              "A temporary burst of low-grade anticipation upon unlocking.",
+              "Subtle guilt, eye strain, and cognitive fog after prolonged scrolling."
+            ]
           }
         ]
       },
       {
-        slideNumber: "05",
+        slideNumber: 3,
+        slideType: "provisional_persona",
+        headline: "Provisional Persona: The Unintentional Scroller",
+        tag: "PROVISIONAL HYPOTHESIS — NOT UNIVERSAL",
+        persona: {
+          title: "The Unintentional Scroller",
+          archetype: "An individual navigating fragmented daily pauses who defaults to screen checking despite desiring richer offline engagement.",
+          behaviours: "Regularly unlocks phone during transitional moments (elevators, transit, coffee waiting); maintains genuine creative/analog interests that remain neglected.",
+          coreFrustration: "The disproportionate activation energy required to begin satisfying offline hobbies compared to the instant zero-friction convenience of the phone.",
+          provisionalDisclaimer: "This persona represents a synthesized behavioural archetype identified within our study cohorts; it is not claimed to represent all age groups or demographics universally."
+        }
+      },
+      {
+        slideNumber: 4,
+        slideType: "pov_problem_hmw",
+        headline: "POV, Problem Statement & How Might We",
+        pov: {
+          label: "POINT OF VIEW (POV) STATEMENT",
+          statement: "A person who frequently reaches for their phone during unoccupied moments may need an easier way to discover and begin a satisfying alternative activity, because the phone provides immediate access to stimulation while other activities may require more effort to initiate."
+        },
+        problem: {
+          label: "FORMAL PROBLEM STATEMENT",
+          statement: "People often turn to their phones during moments of boredom or unoccupied time. While smartphones offer immediate access to content and stimulation, other enjoyable activities may require more thought, preparation, or effort to begin."
+        },
+        hmw: {
+          label: "PRIMARY HOW MIGHT WE (HMW) QUESTION",
+          question: "How might we make alternative activities easier to choose and start during moments of unoccupied time, without assuming that all phone use is undesirable?"
+        }
+      },
+      {
+        slideNumber: 5,
         slideType: "conclusion",
         headline: "Research Archive Conclusion",
-        callout: "The Empathise and Define phases of this investigation are formally concluded. The findings stand as an empirical foundation for future ethical design inquiries.",
+        callout: "The Empathise and Define phases are complete. The persona, insight, POV, and problem statement stand as provisional foundations strictly grounded in qualitative research evidence.",
         nextPostId: 1,
-        nextPostTitle: "About Boredom (Restart)"
+        nextPostTitle: "ABOUT BOREDOM (RESTART)"
       }
     ]
   }
