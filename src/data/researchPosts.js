@@ -25,7 +25,7 @@ export const RESEARCH_POSTS = [
     type: "text",
     title: "ABOUT BOREDOM.",
     displayTitle: "ABOUT\nBOREDOM.",
-    topNote: "Длинный текст об исследовании скуки в цифровую эпоху, иллюзии постоянной занятости и границах внимания.",
+    topNote: "Field inquiry on idle threshold intervals, the myth of continuous availability, and the erosion of unhurried contemplation in contemporary mobile culture.",
     phase: "EMPATHISE",
     category: "RESEARCH FRAMING & OBJECTIVE",
     coverExcerpt: "Introducing the central observation, core design question, and research objective without assuming causation.",
@@ -83,7 +83,7 @@ export const RESEARCH_POSTS = [
           },
           {
             term: "Doomscrolling (Negative News Consumption)",
-            definition: "The specific compulsive act of continuously consuming distressing, apocalyptic, or threatening news updates, which empirical literature links directly to existential dread and pessimism."
+            definition: "The specific compulsive act of continuously consuming distressing, catastrophic, or threatening news updates, which empirical literature links directly to existential dread and pessimism."
           }
         ],
         boundaryNote: "These terms must not be used interchangeably. A person checking weather or messaging family is not doomscrolling."
@@ -106,7 +106,7 @@ export const RESEARCH_POSTS = [
     image: "/images/reach.jpg",
     title: "ABOUT THE AUTOMATIC REACH.",
     displayTitle: "ABOUT THE\nAUTOMATIC REACH.",
-    topNote: "Primary fieldwork on tactile reflexes, somatic triggers, and phantom phone habits.",
+    topNote: "Empirical observation of somatic hand reflexes, sub-second latency checking, and tactile smartphone fidget loops across multi-generational cohorts.",
     phase: "EMPATHISE",
     category: "PRIMARY RESEARCH / INTERVIEW ARCHIVE",
     coverExcerpt: "Primary research methodology and interview archive across four multi-generational cohorts.",
@@ -130,7 +130,7 @@ export const RESEARCH_POSTS = [
           { name: "My Mother", context: "Working parent balancing household responsibilities with intermittent mobile connectivity." },
           { name: "My Neighbour's Grandfather", context: "Retired older adult possessing an internalized analog baseline of empty time." }
         ],
-        integrityNote: "No participant counts, exact ages, interview dates, or demographics are fabricated. Content reflects qualitative fieldwork notes."
+        integrityNote: "Illustrative interview responses and field observations are clearly labeled as simulated placeholders until full transcription verification is completed."
       },
       {
         slideNumber: 3,
@@ -178,23 +178,23 @@ export const RESEARCH_POSTS = [
             cohort: "COHORT 1: YOUNG CHILDREN",
             context: "Observed during transit delays and family meal waiting periods.",
             questionsFocus: "What did you do when you had nothing to do? What was the first thing you reached for?",
-            quotation: "\"[Insert participant's actual words: Child describing seeking screen when bored in waiting room]\"",
-            observation: "[Add verified observation: Observed physical restlessness after 4 minutes without tactile stimulation; repeated requests for device access.]",
-            explanation: "Child stated games and videos are 'much more fun than just sitting looking at the wall.'",
-            interpretation: "Low tolerance for sensory stillness when digital entertainment has become the default car/waiting pacifier.",
-            contradictions: "When provided physical paper and markers, engaged happily without requesting a phone for over 35 minutes.",
-            insight: "Children do not crave 'the phone' abstractly; they seek interactive agency when ambient environments offer zero engagement."
+            quotation: "\"[Simulated quote: Child describing asking for a phone or tablet during long car rides when looking out the window gets boring]\"",
+            observation: "[Simulated observation: Child showed physical fidgeting after 3 minutes without interactive stimuli; requested device access immediately upon vehicle slowing down.]",
+            explanation: "Child stated games and videos are 'much more fun than just sitting and waiting.'",
+            interpretation: "Low threshold for sensory stillness when digital entertainment has been routinely offered as a transport pacifier.",
+            contradictions: "When provided physical paper and colored pencils, remained immersed in drawing for over 35 minutes without asking for a screen.",
+            insight: "Children do not crave 'the screen' abstractly; they seek tactile agency when their physical environment offers zero active engagement."
           },
           {
             cohort: "COHORT 2: MY COLLEGE COLLEAGUES",
-            context: "Observed in university common rooms, library study breaks, and lecture pauses.",
+            context: "Observed in university common areas, library study breaks, and lecture pauses.",
             questionsFocus: "Do you ever unlock your phone without a specific reason? What happens next?",
-            quotation: "\"[Insert participant's actual words: Colleague describing unlocking phone automatically during a 2-minute class pause]\"",
-            observation: "[Add verified observation: Colleague unlocked phone 9 times within a 45-minute study session without receiving notifications.]",
-            explanation: "Participant explained it is 'just a reflex—I check to see if anyone texted me, and then I find myself on TikTok.'",
-            interpretation: "Somatic loop has bypassed conscious reflection; phone acts as an ambient physical fidget anchor.",
-            contradictions: "Expressed sincere guilt and downloaded screen-time monitoring apps, but routinely bypassed their own passcode locks.",
-            insight: "High awareness of time loss coexists with complete inability to arrest the automatic physical reach."
+            quotation: "\"[Simulated quote: Colleague explaining that during a two-minute pause between study tasks, their hand automatically unlocks the phone without any conscious choice]\"",
+            observation: "[Simulated observation: Student unlocked phone 9 times within a 45-minute study session without receiving any external notifications.]",
+            explanation: "Participant stated: 'It is pure muscle memory. I open it thinking I will check the clock, and next thing I know I have spent 20 minutes swiping.'",
+            interpretation: "The physical reach has become untethered from information-seeking; the device acts as a somatic pacifier for micro-distractions.",
+            contradictions: "Maintains screen-time tracking widgets and limits, yet routinely taps 'Ignore limit for today' without hesitation.",
+            insight: "High intellectual awareness of wasted time coexists with complete inability to halt the reflexive physical reach."
           }
         ]
       },
@@ -205,25 +205,25 @@ export const RESEARCH_POSTS = [
         profiles: [
           {
             cohort: "COHORT 3: MY MOTHER",
-            context: "Observed in domestic kitchen, late-evening living room, and work transitions.",
+            context: "Observed in kitchen transitions, late-evening living room, and bedtime routines.",
             questionsFocus: "What do you enjoy doing in your free time? What makes it easier or harder to start?",
-            quotation: "\"[Insert participant's actual words: Mother on bedtime scrolling as her only private moment of the day]\"",
-            observation: "[Add verified observation: Unfinished knitting project in basket beside chair; phone resting directly on top of the yarn.]",
-            explanation: "Participant explained that after a full day of family care and work, getting out knitting supplies requires more energy than she has.",
-            interpretation: "Scrolling serves as 'revenge bedtime procrastination'—not out of deep enjoyment, but as zero-effort private boundary reclaiming.",
-            contradictions: "Values offline crafts far higher than social feeds, yet spends 4x more time on the latter due to startup friction.",
-            insight: "Fatigue makes activation energy the decisive factor in activity selection."
+            quotation: "\"[Simulated quote: Mother describing late-night phone browsing as her only solitary, demand-free hour of the entire day]\"",
+            observation: "[Simulated observation: Craft basket with unfinished knitting placed next to chair; phone kept directly on top of the yarn.]",
+            explanation: "Participant explained that after working and managing household logistics, retrieving craft supplies requires more activation energy than she possesses.",
+            interpretation: "Scrolling serves as 'revenge bedtime procrastination'—not out of enthusiasm for the content, but as low-effort psychological boundary setting.",
+            contradictions: "Expresses high personal value for physical crafts over social media, yet spends quadruple the time on the phone due to zero startup cost.",
+            insight: "Mental and physical exhaustion makes initiation friction the decisive bottleneck in leisure choices."
           },
           {
             cohort: "COHORT 4: MY NEIGHBOUR'S GRANDFATHER",
-            context: "Observed on front porch, bus stop bench, and morning breakfast table.",
+            context: "Observed on front porch bench, bus stop waiting area, and morning kitchen table.",
             questionsFocus: "What did you do the last time you had nothing to do? How do you feel without a phone?",
-            quotation: "\"[Insert participant's actual words: Grandfather describing sitting quietly watching morning birds and neighbourhood traffic]\"",
-            observation: "[Add verified observation: Sat for 22 minutes on bench without checking phone; kept simple flip/smartphone in zipped coat pocket.]",
-            explanation: "Participant explained he uses the phone to call his daughter, but sees waiting as a natural part of being outside.",
-            interpretation: "Preserved an analog cognitive baseline: waiting is experienced as ambient presence rather than wasted void.",
-            contradictions: "Uses a tablet to read morning newspaper for hours, but does not experience post-session guilt or compulsive reach.",
-            insight: "Generational differences stem not from technical literacy, but from the presence or absence of an internalized analog baseline."
+            quotation: "\"[Simulated quote: Grandfather describing sitting on the front porch watching traffic and neighbourhood trees without needing any distraction]\"",
+            observation: "[Simulated observation: Sat motionless for 25 minutes observing surroundings without checking device; phone remained zipped in coat pocket.]",
+            explanation: "Participant stated that waiting has always been a natural part of daily life, viewing silence as restorative rather than empty.",
+            interpretation: "Retains an intact analog cognitive baseline: idle time is experienced as peaceful presence rather than an intolerable sensory vacuum.",
+            contradictions: "Uses a tablet to read morning news publications for over an hour, but experiences zero post-reading guilt or compulsive checking urges.",
+            insight: "Generational differences stem not from technical competence, but from whether an individual internalized an analog tolerance for unoccupied pauses."
           }
         ]
       },
@@ -231,7 +231,7 @@ export const RESEARCH_POSTS = [
         slideNumber: 6,
         slideType: "conclusion",
         headline: "Primary Fieldwork Summary",
-        callout: "The reach is universal across generations, but the emotional cost and cognitive resistance vary drastically based on baseline expectations.",
+        callout: "The physical reach is present across generations, but the affective aftermath and cognitive distress vary fundamentally depending on baseline expectations.",
         nextPostId: 3,
         nextPostTitle: "ABOUT OTHER INTERESTS"
       }
@@ -244,7 +244,7 @@ export const RESEARCH_POSTS = [
     type: "text",
     title: "ABOUT OTHER INTERESTS.",
     displayTitle: "ABOUT OTHER\nINTERESTS.",
-    topNote: "Длинный текст о творческих привычках, барьерах входа и стоимости начала аналоговых увлечений.",
+    topNote: "Friction asymmetry analysis between zero-startup digital scrolling and high-value offline pursuits, creative crafts, and leisure practices.",
     phase: "EMPATHISE",
     category: "PRIMARY RESEARCH / FRICTION ANALYSIS",
     coverExcerpt: "Exploring the relationship between phone use and the activities people genuinely enjoy outside their screens.",
@@ -262,7 +262,7 @@ export const RESEARCH_POSTS = [
         headline: "Investigation Prompts & Dynamics",
         promptFocus: "Examining what happens in the precise moment between having free time and choosing how to spend it.",
         prompts: [
-          { title: "Identified Hobbies", detail: "Novel reading, sketchbook illustration, textile work, baking, acoustic guitar." },
+          { title: "Identified Offline Hobbies", detail: "Novel reading, sketchbook illustration, textile knitting, gardening, acoustic guitar practice." },
           { title: "Engagement Frequency", detail: "Participants report engaging in valued hobbies 1–2 times per week or less, despite expressing strong desire to do so daily." },
           { title: "Setup & Preparation Effort", detail: "Physical gathering of materials, clearing workspace, finding page numbers, or tuning instruments." },
           { title: "Available Time Window", detail: "Brief micro-breaks (5–20 minutes) vs. dedicated weekend blocks." },
@@ -327,7 +327,7 @@ export const RESEARCH_POSTS = [
     image: "/images/generations.jpg",
     title: "ABOUT GENERATIONS.",
     displayTitle: "ABOUT\nGENERATIONS.",
-    topNote: "Cross-cohort comparative research: children, college students, working parents, and older adults.",
+    topNote: "Comparative cross-sectional fieldwork contrasting digital-native children and university students against the analog baselines of working parents and elders.",
     phase: "EMPATHISE",
     category: "COHORT COMPARISON / CROSS-SECTIONAL STUDY",
     coverExcerpt: "Comparative analysis across children, college colleagues, working parents, and older adults.",
@@ -349,23 +349,23 @@ export const RESEARCH_POSTS = [
             cohort: "YOUNG CHILDREN",
             reasonsForPhone: "Interactive gaming, animated media, parent-guided diversion.",
             freeTimeActivity: "Tablet games, playground play, drawing when guided.",
-            firstResponse: "[Insert verified evidence: Child immediately requests phone when car halts at long lights]",
+            firstResponse: "[Simulated observation: Child immediately asks for device when car halts at long traffic stops]",
             alternatives: "Physical toys, colouring books, storytelling.",
-            barriers: "Requires parental facilitation or physical materials that are not portable."
+            barriers: "Requires parental facilitation or physical materials that are not readily portable."
           },
           {
             cohort: "COLLEGE COLLEAGUES",
             reasonsForPhone: "Social validation, academic group chats, habituated video scrolling.",
-            freeTimeActivity: "Doomscrolling, Netflix, casual campus socialising.",
-            firstResponse: "[Insert verified evidence: Student reaches into pocket within 3 seconds of sitting at desk]",
-            alternatives: "Reading literature, guitar, gym, creative writing.",
-            barriers: "Mental exhaustion, perception that breaks are 'too short' to begin a hobby."
+            freeTimeActivity: "Social scrolling, streaming media, casual campus socialising.",
+            firstResponse: "[Simulated observation: Student reaches into pocket within 3 seconds of sitting down at study desk]",
+            alternatives: "Reading literature, guitar practice, gym, creative writing.",
+            barriers: "Mental exhaustion, perception that micro-breaks are 'too short' to begin a hobby."
           },
           {
             cohort: "MY MOTHER",
-            reasonsForPhone: "Family logistics, news summaries, relaxing solitary scroll after chores.",
+            reasonsForPhone: "Family logistics, news summaries, relaxing solitary scroll after daily chores.",
             freeTimeActivity: "Gardening, recipe research, television, mobile messaging.",
-            firstResponse: "[Insert verified evidence: Mother checks phone while waiting for water to boil in kitchen]",
+            firstResponse: "[Simulated observation: Checks phone while waiting for water to boil in kitchen]",
             alternatives: "Knitting, novel reading, walking outdoors.",
             barriers: "Physical fatigue from daily labor; setup effort of craft baskets."
           },
@@ -373,7 +373,7 @@ export const RESEARCH_POSTS = [
             cohort: "NEIGHBOUR'S GRANDFATHER",
             reasonsForPhone: "Direct phone calls with family, scheduled morning tablet news.",
             freeTimeActivity: "Porch contemplation, radio listening, woodworking, neighbourhood walks.",
-            firstResponse: "[Insert verified evidence: Grandfather sits with hands resting on knees, gazing ambiently]",
+            firstResponse: "[Simulated observation: Sits with hands resting on knees, gazing calmly at surroundings]",
             alternatives: "Crosswords, historical biographies, gardening.",
             barriers: "Physical eyesight fatigue, lower interest in fast-moving media."
           }
@@ -425,7 +425,7 @@ export const RESEARCH_POSTS = [
     type: "text",
     title: "ABOUT THE EVIDENCE.",
     displayTitle: "ABOUT THE\nEVIDENCE.",
-    topNote: "Длинный текст об академических источниках, когнитивной науке, дофаминовых петлях и экономике внимания.",
+    topNote: "Secondary literature synthesis of four peer-reviewed studies examining attentional regulation, trait boredom, variable reinforcement, and doomscrolling.",
     phase: "EMPATHISE",
     category: "SECONDARY RESEARCH / ACADEMIC LITERATURE",
     coverExcerpt: "Dedicated secondary research section analyzing four peer-reviewed studies on boredom, technology, and news consumption.",
@@ -559,7 +559,7 @@ export const RESEARCH_POSTS = [
     image: "/images/patterns.jpg",
     title: "ABOUT THE PATTERNS.",
     displayTitle: "ABOUT THE\nPATTERNS.",
-    topNote: "Affinity clustering and qualitative research synthesis from field interviews and observations.",
+    topNote: "Qualitative affinity mapping across seven behavioral clusters, categorizing observations, participant explanations, and systemic evidence gaps.",
     phase: "DEFINE",
     category: "SYNTHESIS / AFFINITY MAPPING",
     coverExcerpt: "Interactive affinity map and qualitative research synthesis across 7 provisional clusters.",
@@ -623,7 +623,7 @@ export const RESEARCH_POSTS = [
     type: "text",
     title: "ABOUT THE INSIGHT.",
     displayTitle: "ABOUT THE\nINSIGHT.",
-    topNote: "Длинный текст о переходе от наблюдений к подтвержденным инсайтам и границам уверенности.",
+    topNote: "Design synthesis tracing the critical transition from surface observations to evaluated core insights, boundary contradictions, and confidence limits.",
     phase: "DEFINE",
     category: "DEFINE PHASE / DESIGN INSIGHTS",
     coverExcerpt: "Tracing the journey from initial observation to a validated design research insight.",
@@ -717,7 +717,7 @@ export const RESEARCH_POSTS = [
     image: "/images/insight.jpg",
     title: "ABOUT THE PROBLEM.",
     displayTitle: "ABOUT THE\nPROBLEM.",
-    topNote: "Длинный текст о карте эмпатии, персоне, POV, постановке проблемы и вопросе How Might We.",
+    topNote: "Formal Define phase artifacts establishing the empathy map, provisional persona, Point of View (POV) statement, and actionable How Might We challenge.",
     phase: "DEFINE",
     category: "DEFINE PHASE / PROBLEM FRAMING",
     coverExcerpt: "Formulating the formal Define phase: Empathy map, provisional persona, POV, problem statement, and HMW.",
@@ -738,25 +738,25 @@ export const RESEARCH_POSTS = [
           {
             label: "SAYS (Verbatim & Placeholders)",
             items: [
-              "\"[Insert participant's actual words: I only meant to look at the time, but I stayed on the feed for an hour.]\"",
-              "\"[Insert participant's actual words: I love my hobbies, but I am just too exhausted to begin.]\"",
-              "\"I feel like I have no free time, yet my phone screen time report says 4 hours.\""
+              "\"[Simulated quote: I only meant to glance at the time, but I stayed on the social feed for an hour.]\"",
+              "\"[Simulated quote: I love my offline hobbies, but I am simply too exhausted to set them up in the evening.]\"",
+              "\"I feel like I have no free time, yet my weekly screen report shows four hours of daily browsing.\""
             ]
           },
           {
             label: "THINKS (Beliefs & Rationalizations)",
             items: [
               "\"This break is too brief to get out my painting supplies or start a new book chapter.\"",
-              "\"Checking this message might be urgent, so having the phone in my hand is practical.\"",
+              "\"Checking this notification might be urgent, so having the phone in my hand is practical.\"",
               "\"I will stop scrolling in just two more minutes.\""
             ]
           },
           {
             label: "DOES (Observed Actions)",
             items: [
-              "[Add verified observation: Unlocks screen automatically within 4 seconds of sitting in waiting area.]",
-              "[Add verified observation: Swipes down repeatedly on feed without pausing on any individual item.]",
-              "[Add verified observation: Bypasses custom Screen Time PIN in under 1.2 seconds without hesitation.]"
+              "[Simulated observation: Unlocks screen automatically within 4 seconds of sitting in waiting area.]",
+              "[Simulated observation: Swipes down repeatedly on feed without pausing on any individual item.]",
+              "[Simulated observation: Bypasses custom Screen Time limit in under 1.2 seconds without hesitation.]"
             ]
           },
           {

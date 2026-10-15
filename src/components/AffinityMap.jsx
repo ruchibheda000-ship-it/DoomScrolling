@@ -11,8 +11,8 @@ const CLUSTERS = [
 ];
 
 const NOTE_TYPES = [
-  { id: 'observation', label: 'OBSERVED EVIDENCE', bg: 'bg-[#171717] text-[#F5F4F0]' },
-  { id: 'explanation', label: 'PARTICIPANT EXPLANATION', bg: 'bg-[#EAE9E4] text-[#171717]' },
+  { id: 'observation', label: 'OBSERVED EVIDENCE (SIMULATED)', bg: 'bg-[#171717] text-[#F5F4F0]' },
+  { id: 'explanation', label: 'PARTICIPANT EXPLANATION (SIMULATED)', bg: 'bg-[#EAE9E4] text-[#171717]' },
   { id: 'interpretation', label: 'RESEARCHER INTERPRETATION', bg: 'bg-[#DFDDD6] text-[#262626]' },
   { id: 'literature', label: 'LITERATURE FINDING', bg: 'bg-[#E4E4DC] text-[#404040]' },
   { id: 'hypothesis', label: 'HYPOTHESIS TO VALIDATE', bg: 'bg-[#F2EFE8] border border-[#171717] text-[#171717]' },
@@ -23,29 +23,29 @@ const INITIAL_NOTES = [
     id: 'n1',
     clusterId: 'automatic-checking',
     type: 'observation',
-    tag: '[Add verified observation]',
-    text: 'Observed participant reach pocket during a 15-second conversational pause without any audio or haptic notification triggering.'
+    tag: '[Simulated Observation]',
+    text: '[Simulated observation: Observed participant reach pocket during a 15-second conversational pause without any audio or haptic alert triggering.]'
   },
   {
     id: 'n2',
     clusterId: 'automatic-checking',
     type: 'explanation',
-    tag: '[College Colleague]',
-    text: '"[Insert participant\'s actual words: I unlock my phone before I even realize I am doing it; it is just in my palm.]"'
+    tag: '[Simulated: College Colleague]',
+    text: '"[Simulated quote: I unlock my phone before I even realize I am doing it; it is just resting in my palm.]"'
   },
   {
     id: 'n3',
     clusterId: 'immediate-availability',
     type: 'interpretation',
     tag: '[Researcher Interpretation]',
-    text: 'The smartphone represents zero physical startup friction. The physical distance between the user and the device is consistently under 30 centimeters.'
+    text: 'The smartphone represents zero physical startup friction. The physical distance between the user and the screen is consistently under 30 centimeters.'
   },
   {
     id: 'n4',
     clusterId: 'existing-hobbies',
     type: 'explanation',
-    tag: '[My Mother]',
-    text: '"[Insert participant\'s actual words: I love knitting and gardening, but getting the yarn basket out for just ten minutes feels like too much work.]"'
+    tag: '[Simulated: My Mother]',
+    text: '"[Simulated quote: I love knitting and gardening, but getting the yarn basket out for just ten minutes feels like too much work.]"'
   },
   {
     id: 'n5',
@@ -58,41 +58,41 @@ const INITIAL_NOTES = [
     id: 'n6',
     clusterId: 'reasons-for-use',
     type: 'observation',
-    tag: '[Young Children]',
-    text: '[Add verified observation: Child requesting parental smartphone when car stopped at traffic signals, seeking interactive cartoon videos.]'
+    tag: '[Simulated: Young Children]',
+    text: '[Simulated observation: Child requesting smartphone when waiting at red traffic signals, seeking interactive cartoon videos.]'
   },
   {
     id: 'n7',
     clusterId: 'intended-vs-actual',
     type: 'explanation',
-    tag: '[College Colleague]',
-    text: '"[Insert participant\'s actual words: I opened the phone to check what time my lecture was, and 30 minutes later I was watching cooking clips.]"'
+    tag: '[Simulated: College Colleague]',
+    text: '"[Simulated quote: I opened the phone to check what time my lecture was, and thirty minutes later I was watching cooking clips.]"'
   },
   {
     id: 'n8',
     clusterId: 'emotional-responses',
     type: 'interpretation',
     tag: '[Researcher Interpretation]',
-    text: 'Post-scrolling affective state is characterized by mild dysphoria and disorientation rather than rejuvenation or satisfaction.'
+    text: 'Post-scrolling affective state is characterized by mild dysphoria and cognitive fog rather than rejuvenation or satisfaction.'
   },
   {
     id: 'n9',
     clusterId: 'exceptions-contradictions',
     type: 'explanation',
-    tag: '[Neighbour\'s Grandfather]',
-    text: '"[Insert participant\'s actual words: I check news on the tablet every morning with tea, but when I sit outside on the porch, I just watch the trees.]"'
+    tag: '[Simulated: Neighbour\'s Grandfather]',
+    text: '"[Simulated quote: I check news on the tablet every morning with tea, but when I sit outside on the porch, I just watch the trees.]"'
   },
   {
     id: 'n10',
     clusterId: 'exceptions-contradictions',
     type: 'literature',
-    tag: '[CHBR 2024]',
+    tag: '[Literature: CHBR 2024]',
     text: 'Doomscrolling (compulsive negative news consumption) specifically evokes existential dread, whereas habitual scrolling often produces cognitive numbness.'
   }
 ];
 
 export default function AffinityMap() {
-  const STORAGE_KEY = 'boredom_project_affinity_map_v2';
+  const STORAGE_KEY = 'boredom_project_affinity_map_en_v3';
 
   const [notes, setNotes] = useState(() => {
     try {
@@ -111,7 +111,7 @@ export default function AffinityMap() {
   // New Note Form State
   const [newCluster, setNewCluster] = useState('automatic-checking');
   const [newType, setNewType] = useState('observation');
-  const [newTag, setNewTag] = useState('[Add verified observation]');
+  const [newTag, setNewTag] = useState('[Simulated Observation]');
   const [newText, setNewText] = useState('');
 
   // Edit Note Form State
@@ -274,8 +274,8 @@ export default function AffinityMap() {
                 value={newType}
                 onChange={(e) => {
                   setNewType(e.target.value);
-                  if (e.target.value === 'observation') setNewTag('[Add verified observation]');
-                  else if (e.target.value === 'explanation') setNewTag('[Insert participant actual words]');
+                  if (e.target.value === 'observation') setNewTag('[Simulated Observation]');
+                  else if (e.target.value === 'explanation') setNewTag('[Simulated Participant Quote]');
                   else if (e.target.value === 'interpretation') setNewTag('[Researcher Interpretation]');
                   else if (e.target.value === 'literature') setNewTag('[Secondary Source citation]');
                   else setNewTag('[Provisional Hypothesis]');
@@ -296,7 +296,7 @@ export default function AffinityMap() {
                 type="text"
                 value={newTag}
                 onChange={(e) => setNewTag(e.target.value)}
-                placeholder="e.g. [College Colleague]"
+                placeholder="e.g. [Simulated: College Colleague]"
                 className="w-full p-1.5 bg-[#F5F4F0] border border-[#DDDCD6] rounded-xs font-mono text-xs"
               />
             </div>
@@ -484,7 +484,7 @@ export default function AffinityMap() {
       </div>
 
       <div className="p-3 bg-[#EAE9E4] text-[11px] font-mono text-[#525252] rounded-xs border border-[#DDDCD6]">
-        💾 <strong>Session Persistence:</strong> Changes, newly added notes, and cluster reorganizations are saved in your browser local storage for this session.
+        💾 <strong>Session Persistence:</strong> Changes, newly added notes, and cluster reorganizations are saved in your browser local storage for this session. Illustrative interview citations are marked as simulated for research integrity.
       </div>
     </div>
   );
