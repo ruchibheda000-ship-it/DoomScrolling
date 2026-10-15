@@ -25,23 +25,24 @@ export const RESEARCH_POSTS = [
     type: "text",
     title: "ABOUT BOREDOM.",
     displayTitle: "ABOUT\nBOREDOM.",
-    topNote: "Field inquiry on idle threshold intervals, the myth of continuous availability, and the erosion of unhurried contemplation in contemporary mobile culture.",
+    subtitle: "Exploring boredom, empty moments, and why we reach for our phones.",
+    topNote: "Exploring boredom, empty moments, and why we reach for our phones.",
+    coverExcerpt: "Exploring boredom, empty moments, and why we reach for our phones.",
     phase: "EMPATHISE",
     category: "RESEARCH FRAMING & OBJECTIVE",
-    coverExcerpt: "Introducing the central observation, core design question, and research objective without assuming causation.",
     slides: [
       {
         slideNumber: 1,
         slideType: "cover",
         headline: "ABOUT BOREDOM.",
-        subheading: "An empirical inquiry into unoccupied moments and digital defaults.",
+        subheading: "Exploring boredom, empty moments, and why we reach for our phones.",
         abstract: "Boredom is often assumed to directly cause screen use. This research investigates what people actually do during moments of unoccupied time, why they reach for their phones, and how convenience and alternative choices shape their actions."
       },
       {
         slideNumber: 2,
         slideType: "context",
         headline: "Initial Observation & The Design Question",
-        objective: "To investigate why people across different generations routinely reach for their phones during brief idle intervals, and how the presence of other activities influences that choice.",
+        objective: "To understand what people do during moments of boredom or unoccupied time, why they reach for their phones, and how convenience, habit, and the availability of other activities may influence their choices.",
         observationNarrative: {
           initialObservation: "People across different generations—from young children waiting for transport, to university students in lecture lulls, to working parents at dinner, to older adults in waiting rooms—frequently reach for their mobile phones during mundane moments of downtime.",
           whyRaisedQuestion: "This shared behaviour raised a fundamental design question: Is this reach driven primarily by acute boredom, by reflexive muscle habit, by the unmatched convenience of the phone, or by the lack of easily accessible alternatives? Rather than assuming that boredom directly causes 'doomscrolling', we framed this project to examine the nuance of these moments."
@@ -106,16 +107,17 @@ export const RESEARCH_POSTS = [
     image: "/images/reach.jpg",
     title: "ABOUT THE AUTOMATIC REACH.",
     displayTitle: "ABOUT THE\nAUTOMATIC REACH.",
-    topNote: "Empirical observation of somatic hand reflexes, sub-second latency checking, and tactile smartphone fidget loops across multi-generational cohorts.",
+    subtitle: "Exploring what makes us pick up our phones without thinking.",
+    topNote: "Exploring what makes us pick up our phones without thinking.",
+    coverExcerpt: "Exploring what makes us pick up our phones without thinking.",
     phase: "EMPATHISE",
     category: "PRIMARY RESEARCH / INTERVIEW ARCHIVE",
-    coverExcerpt: "Primary research methodology and interview archive across four multi-generational cohorts.",
     slides: [
       {
         slideNumber: 1,
         slideType: "cover",
         headline: "ABOUT THE AUTOMATIC REACH.",
-        subheading: "Primary research methodology, interview archive, and participant profiles.",
+        subheading: "Exploring what makes us pick up our phones without thinking.",
         image: "/images/reach.jpg",
         abstract: "Documenting the physical reach and conversational narratives across four participant groups: young children, college colleagues, my mother, and my neighbour's grandfather."
       },
@@ -244,16 +246,17 @@ export const RESEARCH_POSTS = [
     type: "text",
     title: "ABOUT OTHER INTERESTS.",
     displayTitle: "ABOUT OTHER\nINTERESTS.",
-    topNote: "Friction asymmetry analysis between zero-startup digital scrolling and high-value offline pursuits, creative crafts, and leisure practices.",
+    subtitle: "Looking at hobbies, offline activities, and what makes them harder to start.",
+    topNote: "Looking at hobbies, offline activities, and what makes them harder to start.",
+    coverExcerpt: "Looking at hobbies, offline activities, and what makes them harder to start.",
     phase: "EMPATHISE",
     category: "PRIMARY RESEARCH / FRICTION ANALYSIS",
-    coverExcerpt: "Exploring the relationship between phone use and the activities people genuinely enjoy outside their screens.",
     slides: [
       {
         slideNumber: 1,
         slideType: "cover",
         headline: "ABOUT OTHER INTERESTS.",
-        subheading: "Hobbies, activation energy, and the competition for idle time.",
+        subheading: "Looking at hobbies, offline activities, and what makes them harder to start.",
         abstract: "Every participant articulated offline activities they genuinely love—reading, playing guitar, gardening, drawing. Yet when granted 15 minutes of unexpected free time, they overwhelmingly chose the phone."
       },
       {
@@ -327,16 +330,17 @@ export const RESEARCH_POSTS = [
     image: "/images/generations.jpg",
     title: "ABOUT GENERATIONS.",
     displayTitle: "ABOUT\nGENERATIONS.",
-    topNote: "Comparative cross-sectional fieldwork contrasting digital-native children and university students against the analog baselines of working parents and elders.",
+    subtitle: "Exploring how different generations spend their free time.",
+    topNote: "Exploring how different generations spend their free time.",
+    coverExcerpt: "Exploring how different generations spend their free time.",
     phase: "EMPATHISE",
     category: "COHORT COMPARISON / CROSS-SECTIONAL STUDY",
-    coverExcerpt: "Comparative analysis across children, college colleagues, working parents, and older adults.",
     slides: [
       {
         slideNumber: 1,
         slideType: "cover",
         headline: "ABOUT GENERATIONS.",
-        subheading: "Cross-generational comparison matrix and behavioural contrasts.",
+        subheading: "Exploring how different generations spend their free time.",
         image: "/images/generations.jpg",
         abstract: "Comparing four generations to identify where behaviours overlap, where they diverge, and what these patterns mean for our understanding of unoccupied time."
       },
@@ -425,16 +429,17 @@ export const RESEARCH_POSTS = [
     type: "text",
     title: "ABOUT THE EVIDENCE.",
     displayTitle: "ABOUT THE\nEVIDENCE.",
-    topNote: "Secondary literature synthesis of four peer-reviewed studies examining attentional regulation, trait boredom, variable reinforcement, and doomscrolling.",
+    subtitle: "What existing research tells us about boredom, phones, and scrolling.",
+    topNote: "What existing research tells us about boredom, phones, and scrolling.",
+    coverExcerpt: "What existing research tells us about boredom, phones, and scrolling.",
     phase: "EMPATHISE",
     category: "SECONDARY RESEARCH / ACADEMIC LITERATURE",
-    coverExcerpt: "Dedicated secondary research section analyzing four peer-reviewed studies on boredom, technology, and news consumption.",
     slides: [
       {
         slideNumber: 1,
         slideType: "cover",
         headline: "ABOUT THE EVIDENCE.",
-        subheading: "Systematic secondary literature review and empirical grounding.",
+        subheading: "What existing research tells us about boredom, phones, and scrolling.",
         abstract: "Grounding field observations in rigorous peer-reviewed studies across behavioral psychology, psychiatric literature, and human-computer interaction."
       },
       {
@@ -559,16 +564,17 @@ export const RESEARCH_POSTS = [
     image: "/images/patterns.jpg",
     title: "ABOUT THE PATTERNS.",
     displayTitle: "ABOUT THE\nPATTERNS.",
-    topNote: "Qualitative affinity mapping across seven behavioral clusters, categorizing observations, participant explanations, and systemic evidence gaps.",
+    subtitle: "Connecting recurring ideas, possible behaviours, and unanswered questions.",
+    topNote: "Connecting recurring ideas, possible behaviours, and unanswered questions.",
+    coverExcerpt: "Connecting recurring ideas, possible behaviours, and unanswered questions.",
     phase: "DEFINE",
     category: "SYNTHESIS / AFFINITY MAPPING",
-    coverExcerpt: "Interactive affinity map and qualitative research synthesis across 7 provisional clusters.",
     slides: [
       {
         slideNumber: 1,
         slideType: "cover",
         headline: "ABOUT THE PATTERNS.",
-        subheading: "Interactive affinity mapping and synthesis across seven behavioral clusters.",
+        subheading: "Connecting recurring ideas, possible behaviours, and unanswered questions.",
         image: "/images/patterns.jpg",
         abstract: "Synthesizing qualitative fieldwork, interview profiles, and academic literature into an interactive affinity map that can be edited and organized in real time."
       },
@@ -623,16 +629,17 @@ export const RESEARCH_POSTS = [
     type: "text",
     title: "ABOUT THE INSIGHT.",
     displayTitle: "ABOUT THE\nINSIGHT.",
-    topNote: "Design synthesis tracing the critical transition from surface observations to evaluated core insights, boundary contradictions, and confidence limits.",
+    subtitle: "Connecting the observations to possible reasons behind our phone habits.",
+    topNote: "Connecting the observations to possible reasons behind our phone habits.",
+    coverExcerpt: "Connecting the observations to possible reasons behind our phone habits.",
     phase: "DEFINE",
     category: "DEFINE PHASE / DESIGN INSIGHTS",
-    coverExcerpt: "Tracing the journey from initial observation to a validated design research insight.",
     slides: [
       {
         slideNumber: 1,
         slideType: "cover",
         headline: "ABOUT THE INSIGHT.",
-        subheading: "The journey from initial observation to a validated design insight.",
+        subheading: "Connecting the observations to possible reasons behind our phone habits.",
         abstract: "How a simple observation about people looking at phones transformed through primary interviews, cohort comparison, and secondary literature into a refined design insight."
       },
       {
@@ -717,16 +724,17 @@ export const RESEARCH_POSTS = [
     image: "/images/insight.jpg",
     title: "ABOUT THE PROBLEM.",
     displayTitle: "ABOUT THE\nPROBLEM.",
-    topNote: "Formal Define phase artifacts establishing the empathy map, provisional persona, Point of View (POV) statement, and actionable How Might We challenge.",
+    subtitle: "Defining the problem and exploring what could make a difference.",
+    topNote: "Defining the problem and exploring what could make a difference.",
+    coverExcerpt: "Defining the problem and exploring what could make a difference.",
     phase: "DEFINE",
     category: "DEFINE PHASE / PROBLEM FRAMING",
-    coverExcerpt: "Formulating the formal Define phase: Empathy map, provisional persona, POV, problem statement, and HMW.",
     slides: [
       {
         slideNumber: 1,
         slideType: "cover",
         headline: "ABOUT THE PROBLEM.",
-        subheading: "Define Phase: Empathy Map, Persona, POV Statement, and How Might We.",
+        subheading: "Defining the problem and exploring what could make a difference.",
         image: "/images/insight.jpg",
         abstract: "Crystallizing the qualitative research into a structured, formal design challenge. Grounded in empathy, free of premature assumptions, and concluding the research archive."
       },

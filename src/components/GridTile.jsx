@@ -54,13 +54,13 @@ export default function GridTile({ post, onSelect }) {
       {isText ? (
         /* Text-Only Editorial Cover (1:1 with Slide 1) */
         <div className="w-full h-full p-4 sm:p-6 md:p-7 flex flex-col justify-between bg-[#FFFFFF] transition-colors duration-300 group-hover:bg-[#FAF9F6]">
-          {/* Top Row: Tiny Editorial Note + Carousel Icon */}
+          {/* Top Row: Clean Editorial Subtitle + Carousel Icon */}
           <div className="flex items-start justify-between gap-2">
-            <div className="max-w-[72%] sm:max-w-[68%]">
+            <div className="max-w-[76%] sm:max-w-[72%]">
               <span className="font-mono text-[9px] sm:text-[10px] text-[#A3A3A3] block uppercase tracking-wider mb-0.5">
                 {post.number} / {post.phase}
               </span>
-              <p className="text-[8px] sm:text-[9.5px] leading-[1.25] text-[#808080] font-sans line-clamp-3 sm:line-clamp-4 select-none">
+              <p className="text-[9px] sm:text-[10.5px] leading-[1.3] text-[#666666] font-sans line-clamp-3 sm:line-clamp-4 select-none">
                 {post.topNote}
               </p>
             </div>
@@ -72,7 +72,7 @@ export default function GridTile({ post, onSelect }) {
             <h2 className="font-extrabold text-xl sm:text-2xl md:text-[28px] lg:text-[32px] text-[#171717] leading-[1.05] tracking-tight whitespace-pre-line group-hover:text-black transition-transform duration-300 group-hover:translate-x-0.5">
               {post.displayTitle}
             </h2>
-            <div className="mt-1 flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+            <div className="mt-1.5 flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
               <span className="text-[9px] font-mono tracking-widest text-[#737373] uppercase">
                 {post.slides.length} SLIDES • OPEN ARCHIVE →
               </span>
@@ -105,7 +105,7 @@ export default function GridTile({ post, onSelect }) {
             </span>
           </div>
 
-          {/* Bottom Left: Atmospheric Title Overlay */}
+          {/* Bottom Left: Clean Subtitle & Title Overlay */}
           <div className="absolute bottom-3 left-3 right-3 sm:bottom-5 sm:left-5 sm:right-5 z-10">
             <span className="text-[9px] font-mono uppercase tracking-widest text-neutral-400 block mb-0.5">
               {post.phase} ARCHIVE
@@ -113,7 +113,7 @@ export default function GridTile({ post, onSelect }) {
             <h2 className="font-extrabold text-lg sm:text-xl md:text-2xl text-[#F5F4F0] leading-tight tracking-tight drop-shadow-sm whitespace-pre-line">
               {post.displayTitle}
             </h2>
-            <p className="text-[10px] sm:text-xs text-neutral-300 line-clamp-1 mt-1 opacity-80 group-hover:opacity-100 transition-opacity">
+            <p className="text-[10px] sm:text-xs text-neutral-200 line-clamp-2 sm:line-clamp-3 mt-1 opacity-90 leading-snug">
               {post.coverExcerpt}
             </p>
           </div>
