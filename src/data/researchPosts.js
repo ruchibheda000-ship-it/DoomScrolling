@@ -43,7 +43,7 @@ export const RESEARCH_POSTS = [
         headline: "Initial Observation & The Design Question",
         objective: "To understand what people do during moments of boredom or unoccupied time, why they reach for their phones, and how convenience, habit, and the availability of other activities may influence their choices.",
         observationNarrative: {
-          initialObservation: "People across different generationsâ€”from young children waiting for transport, to university students in lecture lulls, to working parents at dinner, to older adults in waiting roomsâ€”frequently reach for their mobile phones during mundane moments of downtime.",
+          initialObservation: "People across different generations — from young children waiting for transport, to university students in lecture lulls, to working parents at dinner, to older adults in waiting rooms — frequently reach for their mobile phones during mundane moments of downtime.",
           whyRaisedQuestion: "This shared behaviour raised a fundamental design question: Is this reach driven primarily by acute boredom, by reflexive muscle habit, by the unmatched convenience of the phone, or by the lack of easily accessible alternatives? Rather than assuming that boredom directly causes 'doomscrolling', we framed this project to examine the nuance of these moments."
         }
       },
@@ -79,7 +79,7 @@ export const RESEARCH_POSTS = [
           },
           {
             term: "Ordinary Browsing & Scrolling",
-            definition: "Extended passive consumption of social feeds, lifestyle videos, or messagingâ€”often undertaken to pass time or decompress, without an overtly distressing emotional charge."
+            definition: "Extended passive consumption of social feeds, lifestyle videos, or messaging — often undertaken to pass time or decompress, without an overtly distressing emotional charge."
           },
           {
             term: "Doomscrolling (Negative News Consumption)",
@@ -270,7 +270,7 @@ export const RESEARCH_POSTS = [
         slideType: "cover",
         headline: "ABOUT OTHER INTERESTS.",
         subheading: "Looking at hobbies, offline activities, and what makes them harder to start.",
-        abstract: "Every participant articulated offline activities they genuinely loveâ€”reading, playing guitar, gardening, drawing. Yet when granted 15 minutes of unexpected free time, they overwhelmingly chose the phone."
+        abstract: "Every participant articulated offline activities they genuinely love — reading, playing guitar, gardening, drawing. Yet when granted 15 minutes of unexpected free time, they overwhelmingly chose the phone."
       },
       {
         slideNumber: 2,
@@ -279,19 +279,21 @@ export const RESEARCH_POSTS = [
         promptFocus: "Examining what happens in the precise moment between having free time and choosing how to spend it.",
         prompts: [
           { title: "Identified Offline Hobbies", detail: "Novel reading, sketchbook illustration, textile knitting, gardening, acoustic guitar practice." },
-          { title: "Engagement Frequency", detail: "Participants report engaging in valued hobbies 1â€“2 times per week or less, despite expressing strong desire to do so daily." },
+          { title: "Engagement Frequency", detail: "Participants report engaging in valued hobbies 1–2 times per week or less, despite expressing strong desire to do so daily." },
           { title: "Setup & Preparation Effort", detail: "Physical gathering of materials, clearing workspace, finding page numbers, or tuning instruments." },
-          { title: "Available Time Window", detail: "Brief micro-breaks (5â€“20 minutes) vs. dedicated weekend blocks." },
+          { title: "Available Time Window", detail: "Brief micro-breaks (5–20 minutes) vs. dedicated weekend blocks." },
           { title: "Cognitive Energy at Decision", detail: "Decision moments frequently coincide with physical or mental fatigue after academic/work tasks." }
         ]
       },
       {
         slideNumber: 3,
         slideType: "hypothesis_framing",
-        headline: "Core Working Hypothesis",
+        label: "PROVISIONAL RESEARCH HYPOTHESIS",
         badge: "PROVISIONAL RESEARCH HYPOTHESIS",
-        hypothesis: "â€œPeople may have activities they genuinely enjoy but choose not to begin during short breaks because another option is easier to access.â€",
-        rationale: "This hypothesis positions phone use not as an addiction of preference, but as an asymmetric triumph of immediate physical availability over delayed, effortful satisfaction."
+        headline: "Core Working Hypothesis",
+        hypothesis: "“People may have activities they enjoy but choose not to start during short breaks because using their phones feels easier and more convenient.”",
+        rationaleHeading: "WHY THIS MIGHT HAPPEN",
+        rationale: "“Phones offer immediate access to entertainment, information, and social connection. Other activities may require more time, preparation, or effort to begin. Whether this influences people's choices needs to be explored through research.”"
       },
       {
         slideNumber: 4,
@@ -312,7 +314,7 @@ export const RESEARCH_POSTS = [
             color: "border-l-4 border-[#737373] bg-[#F9F9F7]",
             activities: "Reading a book, sketching, journaling, manual craft.",
             initiationFriction: "Moderate. Requires retrieving object, finding place, focusing eyes.",
-            cognitiveCost: "Requires 2â€“5 minutes of attentional warm-up before entering flow.",
+            cognitiveCost: "Requires 2–5 minutes of attentional warm-up before entering flow.",
             outcome: "High post-activity satisfaction and creative replenishment."
           },
           {
@@ -545,7 +547,7 @@ export const RESEARCH_POSTS = [
           {
             question: "Does boredom cause screen checking, or does checking trigger boredom?",
             sources: "CHBR 2023, Brain Sci 2025",
-            distinction: "CORRELATION CONFIRMED: High boredom correlates with frequent checking, but longitudinal causation is bidirectionalâ€”frequent digital checking also lowers baseline tolerance for stillness."
+            distinction: "CORRELATION CONFIRMED: High boredom correlates with frequent checking, but longitudinal causation is bidirectional — frequent digital checking also lowers baseline tolerance for stillness."
           },
           {
             question: "Is doomscrolling the same as habitual scrolling?",
@@ -662,22 +664,22 @@ export const RESEARCH_POSTS = [
         steps: [
           {
             stage: "1. INITIAL OBSERVATION",
-            content: "â€œPeople across different generations use their phones.â€",
+            content: "“People across different generations use their phones.”",
             context: "A broad, surface-level reality visible in any public or domestic environment."
           },
           {
             stage: "2. GUIDING RESEARCH QUESTION",
-            content: "â€œWhat makes the phone an easy choice during unoccupied moments?â€",
+            content: "“What makes the phone an easy choice during unoccupied moments?”",
             context: "Shifting focus from what people do to the underlying environmental and cognitive drivers."
           },
           {
             stage: "3. WORKING HYPOTHESIS",
-            content: "â€œThe phone's availability and low effort may make it an easy response to boredom, but phone use can also serve important practical and social needs.â€",
+            content: "“The phone's availability and low effort may make it an easy response to boredom, but phone use can also serve important practical and social needs.”",
             context: "Recognizing that screen use is nuanced and cannot be dismissed as pure pathology."
           },
           {
             stage: "4. POTENTIAL INSIGHT TO VALIDATE",
-            content: "â€œThe easiest activity to start may not always be the activity a person most wants to do.â€",
+            content: "“The easiest activity to start may not always be the activity a person most wants to do.”",
             context: "The core tension between immediate initiation friction and genuine long-term human satisfaction."
           }
         ]
@@ -794,7 +796,7 @@ export const RESEARCH_POSTS = [
         slideNumber: 3,
         slideType: "provisional_persona",
         headline: "Provisional Persona: The Unintentional Scroller",
-        tag: "PROVISIONAL HYPOTHESIS â€” NOT UNIVERSAL",
+        tag: "PROVISIONAL HYPOTHESIS — NOT UNIVERSAL",
         persona: {
           title: "The Unintentional Scroller",
           archetype: "An individual navigating fragmented daily pauses who defaults to screen checking despite desiring richer offline engagement.",

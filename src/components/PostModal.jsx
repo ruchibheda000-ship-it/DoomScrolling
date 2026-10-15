@@ -526,7 +526,7 @@ export default function PostModal({ post, isOpen, onClose, onSelectNextPost }) {
                 <div className="space-y-6 animate-fadeIn">
                   <div>
                     <span className="text-xs font-mono tracking-widest uppercase px-2 py-0.5 rounded-xs bg-[#171717] text-[#F5F4F0] font-bold">
-                      {currentSlide.badge}
+                      {currentSlide.label || currentSlide.badge}
                     </span>
                     <h2 id="modal-slide-title" className="text-2xl sm:text-3xl font-extrabold text-[#171717] tracking-tight mt-2">
                       {currentSlide.headline}
@@ -539,8 +539,13 @@ export default function PostModal({ post, isOpen, onClose, onSelectNextPost }) {
                     </p>
                   </div>
 
-                  <div className="p-4 bg-[#EAE9E4] text-xs sm:text-sm text-[#404040] rounded-xs leading-relaxed">
-                    <strong>Analytical Rationale:</strong> {currentSlide.rationale}
+                  <div className="p-4 bg-[#EAE9E4] text-xs sm:text-sm text-[#404040] rounded-xs leading-relaxed space-y-1.5 border-l-2 border-[#171717]">
+                    <span className="font-mono text-[10px] text-[#525252] uppercase tracking-wider block font-bold">
+                      {currentSlide.rationaleHeading || "WHY THIS MIGHT HAPPEN"}
+                    </span>
+                    <p className="font-sans text-xs sm:text-sm text-[#262626] leading-relaxed">
+                      {currentSlide.rationale}
+                    </p>
                   </div>
                 </div>
               )}
