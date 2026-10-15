@@ -81,10 +81,6 @@ export default function Header({ activeFilter, onFilterChange, postCount }) {
             <p className="mt-1 text-[#525252]">{PROJECT_METADATA.bio.description}</p>
             <div className="mt-2 flex flex-wrap items-center gap-3 text-xs font-mono text-[#737373]">
               <span>📍 {PROJECT_METADATA.bio.location}</span>
-              <span>•</span>
-              <span className="text-[#171717] underline decoration-neutral-400 cursor-pointer">
-                📄 {PROJECT_METADATA.bio.linkText}
-              </span>
             </div>
           </div>
         </div>
