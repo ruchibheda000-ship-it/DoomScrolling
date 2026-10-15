@@ -417,7 +417,7 @@ export default function PostModal({ post, isOpen, onClose, onSelectNextPost }) {
                 <div className="space-y-5 animate-fadeIn">
                   <div>
                     <span className="text-xs font-mono tracking-widest uppercase text-[#737373] block mb-1">
-                      QUALITATIVE INTERVIEW PROFILES
+                      {currentSlide.eyebrow || "QUALITATIVE INTERVIEW EXPLORATION"}
                     </span>
                     <h2 id="modal-slide-title" className="text-2xl sm:text-3xl font-extrabold text-[#171717] tracking-tight">
                       {currentSlide.headline}
@@ -427,46 +427,67 @@ export default function PostModal({ post, isOpen, onClose, onSelectNextPost }) {
                   <div className="space-y-5">
                     {currentSlide.profiles.map((p, idx) => (
                       <div key={idx} className="p-4 sm:p-5 bg-[#FFFFFF] border border-[#E5E4DE] rounded-xs space-y-3 shadow-xs">
-                        <div className="flex items-center justify-between border-b border-[#ECEBE6] pb-2">
-                          <span className="font-mono text-xs font-bold text-[#171717] uppercase">
-                            {p.cohort}
+                        <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-[#ECEBE6] pb-2 gap-1">
+                          <span className="font-mono text-xs font-bold text-[#171717] uppercase tracking-wide">
+                            {p.sectionHeading || p.cohort}
                           </span>
-                          <span className="text-[10px] font-mono text-[#737373]">{p.context}</span>
+                          {p.context && (
+                            <span className="text-[10px] sm:text-[11px] font-mono text-[#737373]">{p.context}</span>
+                          )}
                         </div>
 
-                        <div className="space-y-2">
-                          <div className="p-3 bg-[#F9F9F7] border-l-3 border-[#171717] rounded-xs">
-                            <span className="text-[9px] font-mono text-[#737373] uppercase tracking-wider block mb-0.5">
-                              PARTICIPANT QUOTATION
-                            </span>
-                            <p className="text-xs sm:text-sm font-serif italic text-[#171717]">{p.quotation}</p>
-                          </div>
-
-                          <div className="p-3 bg-[#171717] text-[#F5F4F0] rounded-xs">
-                            <span className="text-[9px] font-mono text-neutral-400 uppercase tracking-wider block mb-0.5">
-                              OBSERVED BEHAVIOUR
-                            </span>
-                            <p className="text-xs font-sans text-neutral-200">{p.observation}</p>
-                          </div>
-
-                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-                            <div className="p-2.5 bg-[#EFEFEA] rounded-xs">
-                              <span className="font-mono text-[9px] text-[#737373] uppercase block mb-0.5">
-                                RESEARCHER INTERPRETATION
+                        <div className="space-y-2.5">
+                          {p.quotation && (
+                            <div className="p-3 bg-[#F9F9F7] border-l-3 border-[#171717] rounded-xs">
+                              <span className="text-[9px] font-mono text-[#737373] uppercase tracking-wider block mb-0.5">
+                                {p.quotationLabel || "ILLUSTRATIVE DIALOGUE — NOT A REAL QUOTE"}
                               </span>
-                              <p className="text-[#262626]">{p.interpretation}</p>
+                              <p className="text-xs sm:text-sm font-serif italic text-[#171717]">{p.quotation}</p>
                             </div>
-                            <div className="p-2.5 bg-[#EFEFEA] rounded-xs">
-                              <span className="font-mono text-[9px] text-[#737373] uppercase block mb-0.5">
-                                CONTRADICTIONS & EDGE CASES
-                              </span>
-                              <p className="text-[#262626]">{p.contradictions}</p>
-                            </div>
-                          </div>
+                          )}
 
-                          <div className="p-2 bg-[#EAE9E4] rounded-xs text-xs font-mono text-[#171717]">
-                            💡 <strong>Emerging Insight:</strong> {p.insight}
-                          </div>
+                          {(p.behaviour || p.observation) && (
+                            <div className="p-3 bg-[#171717] text-[#F5F4F0] rounded-xs">
+                              <span className="text-[9px] font-mono text-neutral-400 uppercase tracking-wider block mb-0.5">
+                                {p.behaviourLabel || "BEHAVIOURS TO INVESTIGATE"}
+                              </span>
+                              <p className="text-xs font-sans text-neutral-200 leading-relaxed">{p.behaviour || p.observation}</p>
+                            </div>
+                          )}
+
+                          {(p.researchQuestion || p.alternativesToExplore || p.interpretation || p.contradictions) && (
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                              {(p.researchQuestion || p.interpretation) && (
+                                <div className="p-3 bg-[#EFEFEA] rounded-xs flex flex-col justify-between">
+                                  <div>
+                                    <span className="font-mono text-[9px] text-[#737373] uppercase tracking-wider block mb-1">
+                                      {p.researchQuestionLabel || (p.researchQuestion ? "RESEARCH QUESTION" : "RESEARCHER INTERPRETATION")}
+                                    </span>
+                                    <p className="text-[#171717] font-medium leading-relaxed">{p.researchQuestion || p.interpretation}</p>
+                                  </div>
+                                </div>
+                              )}
+                              {(p.alternativesToExplore || p.contradictions) && (
+                                <div className="p-3 bg-[#EFEFEA] rounded-xs flex flex-col justify-between">
+                                  <div>
+                                    <span className="font-mono text-[9px] text-[#737373] uppercase tracking-wider block mb-1">
+                                      {p.alternativesLabel || (p.alternativesToExplore ? "ALTERNATIVE TO EXPLORE" : "CONTRADICTIONS & EDGE CASES")}
+                                    </span>
+                                    <p className="text-[#262626] leading-relaxed">{p.alternativesToExplore || p.contradictions}</p>
+                                  </div>
+                                </div>
+                              )}
+                            </div>
+                          )}
+
+                          {p.insight && (
+                            <div className="p-3 bg-[#EAE9E4] border-l-2 border-[#171717] rounded-xs text-xs font-mono text-[#171717]">
+                              <span className="font-mono text-[9px] text-[#525252] uppercase tracking-wider block mb-0.5 font-bold">
+                                {p.insightLabel || "WORKING HYPOTHESIS"}
+                              </span>
+                              <p className="font-sans text-xs text-[#171717] leading-relaxed">{p.insight}</p>
+                            </div>
+                          )}
                         </div>
                       </div>
                     ))}

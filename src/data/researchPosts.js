@@ -131,7 +131,7 @@ export const RESEARCH_POSTS = [
           { name: "My Mother", context: "Working parent balancing household responsibilities with intermittent mobile connectivity." },
           { name: "My Neighbour's Grandfather", context: "Retired older adult possessing an internalized analog baseline of empty time." }
         ],
-        integrityNote: "Illustrative interview responses and field observations are clearly labeled as simulated placeholders until full transcription verification is completed."
+        integrityNote: "Participant scenarios are exploratory research frameworks outlining hypothetical behaviours, research questions, and working hypotheses before field interviews are conducted."
       },
       {
         slideNumber: 3,
@@ -173,66 +173,80 @@ export const RESEARCH_POSTS = [
       {
         slideNumber: 4,
         slideType: "profiles_part1",
-        headline: "Participant Profiles: Cohorts 1 & 2",
+        eyebrow: "QUALITATIVE INTERVIEW EXPLORATION",
+        headline: "Participant Scenarios: Children and Everyday Boredom",
         profiles: [
           {
-            cohort: "COHORT 1: YOUNG CHILDREN",
-            context: "Observed during transit delays and family meal waiting periods.",
-            questionsFocus: "What did you do when you had nothing to do? What was the first thing you reached for?",
-            quotation: "\"[Simulated quote: Child describing asking for a phone or tablet during long car rides when looking out the window gets boring]\"",
-            observation: "[Simulated observation: Child showed physical fidgeting after 3 minutes without interactive stimuli; requested device access immediately upon vehicle slowing down.]",
-            explanation: "Child stated games and videos are 'much more fun than just sitting and waiting.'",
-            interpretation: "Low threshold for sensory stillness when digital entertainment has been routinely offered as a transport pacifier.",
-            contradictions: "When provided physical paper and colored pencils, remained immersed in drawing for over 35 minutes without asking for a screen.",
-            insight: "Children do not crave 'the screen' abstractly; they seek tactile agency when their physical environment offers zero active engagement."
-          },
-          {
-            cohort: "COHORT 2: MY COLLEGE COLLEAGUES",
-            context: "Observed in university common areas, library study breaks, and lecture pauses.",
-            questionsFocus: "Do you ever unlock your phone without a specific reason? What happens next?",
-            quotation: "\"[Simulated quote: Colleague explaining that during a two-minute pause between study tasks, their hand automatically unlocks the phone without any conscious choice]\"",
-            observation: "[Simulated observation: Student unlocked phone 9 times within a 45-minute study session without receiving any external notifications.]",
-            explanation: "Participant stated: 'It is pure muscle memory. I open it thinking I will check the clock, and next thing I know I have spent 20 minutes swiping.'",
-            interpretation: "The physical reach has become untethered from information-seeking; the device acts as a somatic pacifier for micro-distractions.",
-            contradictions: "Maintains screen-time tracking widgets and limits, yet routinely taps 'Ignore limit for today' without hesitation.",
-            insight: "High intellectual awareness of wasted time coexists with complete inability to halt the reflexive physical reach."
+            sectionHeading: "SCENARIO 01: YOUNG CHILDREN",
+            context: "Context to explore: waiting during car journeys, family outings, or other unoccupied moments.",
+            quotationLabel: "ILLUSTRATIVE DIALOGUE — NOT A REAL QUOTE",
+            quotation: "“When I'm bored, I want something fun to do.”",
+            behaviourLabel: "BEHAVIOURS TO INVESTIGATE",
+            behaviour: "How does a child respond when there is nothing to do? Do they ask for a device, start playing, look for company, or simply observe their surroundings?",
+            researchQuestionLabel: "RESEARCH QUESTION",
+            researchQuestion: "What makes one activity more appealing than another?",
+            alternativesLabel: "ALTERNATIVE TO EXPLORE",
+            alternativesToExplore: "Would toys, drawing, conversation, or suggested games change what the child chooses?",
+            insightLabel: "WORKING HYPOTHESIS",
+            insight: "Having an activity readily available may influence what a child chooses when bored. This needs to be explored with real participants."
           }
         ]
       },
       {
         slideNumber: 5,
         slideType: "profiles_part2",
-        headline: "Participant Profiles: Cohorts 3 & 4",
+        eyebrow: "QUALITATIVE INTERVIEW EXPLORATION",
+        headline: "Simulated Interview Scenarios: Adults & Older Cohorts",
         profiles: [
           {
-            cohort: "COHORT 3: MY MOTHER",
-            context: "Observed in kitchen transitions, late-evening living room, and bedtime routines.",
-            questionsFocus: "What do you enjoy doing in your free time? What makes it easier or harder to start?",
-            quotation: "\"[Simulated quote: Mother describing late-night phone browsing as her only solitary, demand-free hour of the entire day]\"",
-            observation: "[Simulated observation: Craft basket with unfinished knitting placed next to chair; phone kept directly on top of the yarn.]",
-            explanation: "Participant explained that after working and managing household logistics, retrieving craft supplies requires more activation energy than she possesses.",
-            interpretation: "Scrolling serves as 'revenge bedtime procrastination'â€”not out of enthusiasm for the content, but as low-effort psychological boundary setting.",
-            contradictions: "Expresses high personal value for physical crafts over social media, yet spends quadruple the time on the phone due to zero startup cost.",
-            insight: "Mental and physical exhaustion makes initiation friction the decisive bottleneck in leisure choices."
+            sectionHeading: "SCENARIO 02: COLLEGE STUDENTS",
+            context: "Context to explore: study breaks, transit intervals, and micro-pauses between academic tasks.",
+            quotationLabel: "ILLUSTRATIVE DIALOGUE — NOT A REAL QUOTE",
+            quotation: "“During study breaks, I find myself checking social feeds before I even decide what to do next.”",
+            behaviourLabel: "BEHAVIOURS TO INVESTIGATE",
+            behaviour: "How do young adults respond during brief unoccupied moments? Do they instinctively reach for a screen, talk to peers, take a walk, or simply rest?",
+            researchQuestionLabel: "RESEARCH QUESTION",
+            researchQuestion: "What prompts an automatic phone unlock when no notification has arrived?",
+            alternativesLabel: "ALTERNATIVE TO EXPLORE",
+            alternativesToExplore: "Would dedicated offline break areas or silent study environments change break habits?",
+            insightLabel: "WORKING HYPOTHESIS",
+            insight: "Device checking during study breaks may function as a habitual micro-pause rather than deliberate media consumption."
           },
           {
-            cohort: "COHORT 4: MY NEIGHBOUR'S GRANDFATHER",
-            context: "Observed on front porch bench, bus stop waiting area, and morning kitchen table.",
-            questionsFocus: "What did you do the last time you had nothing to do? How do you feel without a phone?",
-            quotation: "\"[Simulated quote: Grandfather describing sitting on the front porch watching traffic and neighbourhood trees without needing any distraction]\"",
-            observation: "[Simulated observation: Sat motionless for 25 minutes observing surroundings without checking device; phone remained zipped in coat pocket.]",
-            explanation: "Participant stated that waiting has always been a natural part of daily life, viewing silence as restorative rather than empty.",
-            interpretation: "Retains an intact analog cognitive baseline: idle time is experienced as peaceful presence rather than an intolerable sensory vacuum.",
-            contradictions: "Uses a tablet to read morning news publications for over an hour, but experiences zero post-reading guilt or compulsive checking urges.",
-            insight: "Generational differences stem not from technical competence, but from whether an individual internalized an analog tolerance for unoccupied pauses."
+            sectionHeading: "SCENARIO 03: WORKING PARENTS",
+            context: "Context to explore: evening transitions, household wind-down, and solitary downtime.",
+            quotationLabel: "ILLUSTRATIVE DIALOGUE — NOT A REAL QUOTE",
+            quotation: "“At the end of a long day, I want something relaxing that requires zero effort.”",
+            behaviourLabel: "BEHAVIOURS TO INVESTIGATE",
+            behaviour: "How do working parents choose between offline leisure and digital scrolling? Does high mental exhaustion make convenient phone use the primary default?",
+            researchQuestionLabel: "RESEARCH QUESTION",
+            researchQuestion: "How much does setup friction determine whether an offline activity is chosen over scrolling?",
+            alternativesLabel: "ALTERNATIVE TO EXPLORE",
+            alternativesToExplore: "Would having offline materials pre-arranged in advance lower initiation barriers?",
+            insightLabel: "WORKING HYPOTHESIS",
+            insight: "Fatigue and friction may be decisive factors in whether leisure time is spent offline or on digital devices."
+          },
+          {
+            sectionHeading: "SCENARIO 04: RETIRED OLDER ADULTS",
+            context: "Context to explore: waiting intervals, morning routines, and quiet unoccupied time.",
+            quotationLabel: "ILLUSTRATIVE DIALOGUE — NOT A REAL QUOTE",
+            quotation: "“I am used to waiting quietly without needing to fill every minute.”",
+            behaviourLabel: "BEHAVIOURS TO INVESTIGATE",
+            behaviour: "How do older adults who grew up without smartphones experience unstructured pauses? Do they perceive waiting as peaceful or as empty time needing distraction?",
+            researchQuestionLabel: "RESEARCH QUESTION",
+            researchQuestion: "Does an analog childhood build greater tolerance for sensory stillness?",
+            alternativesLabel: "ALTERNATIVE TO EXPLORE",
+            alternativesToExplore: "How do older adults structure their days when smartphones are accessible but not habitual?",
+            insightLabel: "WORKING HYPOTHESIS",
+            insight: "Individuals with an analog baseline may experience unoccupied time with lower anxiety and less reflexive phone use."
           }
         ]
       },
       {
         slideNumber: 6,
         slideType: "conclusion",
-        headline: "Primary Fieldwork Summary",
-        callout: "The physical reach is present across generations, but the affective aftermath and cognitive distress vary fundamentally depending on baseline expectations.",
+        headline: "Qualitative Exploration Summary",
+        callout: "The reflexive reach appears across multiple generational scenarios, but cognitive expectations and friction thresholds differ significantly between analog and digital baselines.",
         nextPostId: 3,
         nextPostTitle: "ABOUT OTHER INTERESTS"
       }
@@ -352,7 +366,7 @@ export const RESEARCH_POSTS = [
             cohort: "YOUNG CHILDREN",
             reasonsForPhone: "Interactive gaming, animated media, parent-guided diversion.",
             freeTimeActivity: "Tablet games, playground play, drawing when guided.",
-            firstResponse: "[Simulated observation: Child immediately asks for device when car halts at long traffic stops]",
+            firstResponse: "Inquiry to explore: Does the child seek a screen, play with toys, or observe their surroundings?",
             alternatives: "Physical toys, colouring books, storytelling.",
             barriers: "Requires parental facilitation or physical materials that are not readily portable."
           },
@@ -360,7 +374,7 @@ export const RESEARCH_POSTS = [
             cohort: "COLLEGE COLLEAGUES",
             reasonsForPhone: "Social validation, academic group chats, habituated video scrolling.",
             freeTimeActivity: "Social scrolling, streaming media, casual campus socialising.",
-            firstResponse: "[Simulated observation: Student reaches into pocket within 3 seconds of sitting down at study desk]",
+            firstResponse: "Inquiry to explore: Does the student automatically unlock their device during study pauses or transitions?",
             alternatives: "Reading literature, guitar practice, gym, creative writing.",
             barriers: "Mental exhaustion, perception that micro-breaks are 'too short' to begin a hobby."
           },
@@ -368,7 +382,7 @@ export const RESEARCH_POSTS = [
             cohort: "MY MOTHER",
             reasonsForPhone: "Family logistics, news summaries, relaxing solitary scroll after daily chores.",
             freeTimeActivity: "Gardening, recipe research, television, mobile messaging.",
-            firstResponse: "[Simulated observation: Checks phone while waiting for water to boil in kitchen]",
+            firstResponse: "Inquiry to explore: Does the adult pick up the device during kitchen or household transitions?",
             alternatives: "Knitting, novel reading, walking outdoors.",
             barriers: "Physical fatigue from daily labor; setup effort of craft baskets."
           },
@@ -376,7 +390,7 @@ export const RESEARCH_POSTS = [
             cohort: "NEIGHBOUR'S GRANDFATHER",
             reasonsForPhone: "Direct phone calls with family, scheduled morning tablet news.",
             freeTimeActivity: "Porch contemplation, radio listening, woodworking, neighbourhood walks.",
-            firstResponse: "[Simulated observation: Sits with hands resting on knees, gazing calmly at surroundings]",
+            firstResponse: "Inquiry to explore: Does the individual comfortably observe the surroundings without needing a screen?",
             alternatives: "Crosswords, historical biographies, gardening.",
             barriers: "Physical eyesight fatigue, lower interest in fast-moving media."
           }
@@ -743,10 +757,10 @@ export const RESEARCH_POSTS = [
         headline: "Empathy Map: The Unoccupied Moment",
         quadrants: [
           {
-            label: "SAYS (Verbatim & Placeholders)",
+            label: "SAYS (Illustrative Perspectives — Hypothesised)",
             items: [
-              "\"[Simulated quote: I only meant to glance at the time, but I stayed on the social feed for an hour.]\"",
-              "\"[Simulated quote: I love my offline hobbies, but I am simply too exhausted to set them up in the evening.]\"",
+              "“I only meant to glance at the time, but I stayed on the social feed for an hour.”",
+              "“I love my offline hobbies, but I am simply too exhausted to set them up in the evening.”",
               "\"I feel like I have no free time, yet my weekly screen report shows four hours of daily browsing.\""
             ]
           },
@@ -759,11 +773,11 @@ export const RESEARCH_POSTS = [
             ]
           },
           {
-            label: "DOES (Observed Actions)",
+            label: "DOES (Hypothesised Actions to Investigate)",
             items: [
-              "[Simulated observation: Unlocks screen automatically within 4 seconds of sitting in waiting area.]",
-              "[Simulated observation: Swipes down repeatedly on feed without pausing on any individual item.]",
-              "[Simulated observation: Bypasses custom Screen Time limit in under 1.2 seconds without hesitation.]"
+              "Unlocks screen reflexively during brief pauses or waiting intervals.",
+              "Swipes down repeatedly on feed without pausing on any individual item.",
+              "Bypasses custom Screen Time limit without hesitation during downtime."
             ]
           },
           {
